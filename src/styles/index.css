@@ -1,0 +1,143 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  font-family: Ubuntu;
+  background-color: #09040e;
+  overflow-y: hidden;
+}
+
+div #image {
+  font-family: Ubuntu;
+  background-color: #09040e;
+  background-image: url("./images/mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+  height: 100vh;
+  margin-top: .5%;
+}
+
+#nav {
+  display: block;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  position: fixed;
+  width: 30vw;
+  top: 0px;
+  right: -30vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav #links a {
+  color: whitesmoke;
+  display: block;
+  margin-bottom: 4em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#toggle {
+  display: block;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  top: 80vh;
+  right: 10px;
+  height: 20vh;
+  width: 10vw;
+}
+
+.line {
+  padding: .2em;
+  margin-bottom: 5em;
+  background-color: white;
+  cursor: pointer;
+  margin: .1em;
+}
+
+#text {
+  font-size: 3.4rem;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  overflow-y: none;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media (min-width: 360px) {
+  html div #image {
+    background-color: #09040e;
+    background-image: url("./images/desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #nav {
+    width: 15vw;
+    right: -25vw;
+  }
+  #toggle {
+    top: 6vh;
+    width: 37px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

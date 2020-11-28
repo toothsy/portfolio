@@ -1,0 +1,109 @@
+$background:#09040e;
+$fullH:100vh;
+$fullW:100vw;
+$Peeche:-1;
+$aage:1;
+@mixin backgroundStuff($url,$size) {
+    background-color: $background;
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: no-repeat;    
+}
+@mixin centerShit() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin dontCenter {
+    display: block;
+    justify-content: unset; ;
+    align-items: unset;
+
+}
+html,body{
+    box-sizing: border-box;
+    margin:0px;
+    font-family: Ubuntu;
+    background-color: $background;
+    overflow-y: hidden;
+}
+div #image{
+        font-family: Ubuntu;
+        @include backgroundStuff("./images/mobile.jpg",cover);
+        @include centerShit(); 
+        z-index: $Peeche;  
+        height: 100vh;
+        margin-top: .5%;
+        
+}
+#nav{
+    @include dontCenter();
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 30vw;
+    top:0px;
+    right:-30vw;
+    height: 100vh;
+    background-color: black;
+    z-index: $aage + 1;
+    @include centerShit();
+    #links a{
+        color: whitesmoke;
+        display: block;
+        margin-bottom: 4em;
+        text-decoration: none;
+        cursor:pointer;
+    }
+    
+    
+}
+#toggle{
+    @include dontCenter();
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: $aage+1;
+    top:80vh;
+    right:10px;
+    height: 20vh;
+    width: 10vw;
+} 
+        .line {
+            padding: .2em ;
+            // width: 10vw;
+            margin-bottom: 5em;
+            background-color: white;
+            cursor:pointer;
+            margin: .1em;
+        }
+#text{
+        font-size: 3.4rem;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.60);
+        backdrop-filter : blur(5px);
+        color: rgb(255, 255, 255);
+        @include centerShit();   
+        z-index: $aage;
+        overflow-y:none;
+        opacity:0;
+        user-select: none;
+        }
+
+@media  (min-width:360px){
+    html {
+        div #image{
+            @include backgroundStuff("./images/desktop.jpg",cover);
+        }
+}
+    #nav{
+        width: 15vw;
+        right: -25vw;
+    }
+    #toggle{
+        top:6vh;
+        width: 37px;
+    }
+}
