@@ -7,16 +7,16 @@ export default function Homepage() {
     const {clicked} = useContext(EventHua);
     useEffect(()=>{
         let t1 = gsap.timeline();
-        t1.fromTo(text,{y:-20},{opacity:.85,duration:.75  ,ease:Power4.easeIn})
+        t1.fromTo(text,{},{opacity:.85,duration:.75  ,ease:Power4.easeIn})
     },[])
     useEffect(()=>{
         console.log(clicked)
         if(window.innerWidth<360){
             if(clicked){
-                gsap.to(content,{duration:.7,rotateY:40,translateX:"-20vw"})
+                gsap.to(content,{duration:.5,rotateY:40,translateX:"-10vw",perspective:"1000"})
                 }
             else{
-                gsap.to(content,{duration:.7,rotateY:0,translateX:"0vw"})
+                gsap.to(content,{duration:.5,rotateY:0,translateX:"0vw"})
             }
         }
         else{
@@ -31,12 +31,11 @@ export default function Homepage() {
     ,[clicked])
     return (
         <div id="content" ref={el=>content=el}>
-            <div id="image">
-                <div id="text" ref={el=>text=el}>
-                    Hi there,this is Atharva and I love minimalism
-                </div>
+    
+                <h1 id="text" ref={el=>text=el}>
+                    Simple, yet effective.
+                </h1>
             </div>
-        </div>
     )
 }
 

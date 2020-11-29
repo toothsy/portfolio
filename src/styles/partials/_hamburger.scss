@@ -1,0 +1,50 @@
+#toggle{
+    @include dontCenter();
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: $aage+1;
+    top:80vh;
+    right:10px;
+    height: 20vh;
+    width: 10vw;
+} 
+.line {
+    padding: .2em ;
+    margin-bottom: 5em;
+    background-color: white;
+    cursor:pointer;
+    margin: .1em;
+}
+#nav{
+    @include dontCenter();
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 30vw;
+    top:0px;
+    right:-30vw;
+    height: 100vh;
+    background-color: black;
+    z-index: $aage + 1;
+    @include centerShit();
+    #links a{
+        color: whitesmoke;
+        display: block;
+        margin-bottom: 4em;
+        text-decoration: none;
+        cursor:pointer;
+    }  
+    
+}
+@media (min-width:360px){
+    #toggle{
+        top:6vh;
+        width: 37px;
+    }
+    #nav{
+        width: 15vw;
+        right: -25vw;
+    }
+}

@@ -1,11 +1,6 @@
-@mixin centerShit($h) {
-    height: $h;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 #navBar{    
-    @include centerShit(1vw);
+    @include centerShit1(1vw);
     div{
         width: 100%;
         color: $background;
@@ -14,17 +9,14 @@
 @media only screen and (min-width:768px){
 #navBar{
     display: inline;
-    // height: 20vh;
     width: 100%;
     margin-left: 80%;
     margin-top: 10%;
-    // align-items:center;
     
-    @include centerShit(1vw);
+    @include centerShit1(1vw);
     div{
         display: inline;
         text-decoration: rgb(129, 104, 197);
-        // color: rgb(15, 185, 52);
         padding-left: 2vw;
     }
 }

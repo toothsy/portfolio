@@ -15,14 +15,14 @@ export default function NavBar() {
             if(!clicked){
                 gsap.to(NbDiv,{duration:.7,translateX:"-25vw"})
                 setClicked(true);
-                rotateStuff(top,.7,45)
-                rotateStuff(bot,.7,-45)
+                rotateStuff(top,.5,45)
+                rotateStuff(bot,.5,-45)
                 diss.style.opacity=0;
             }
             else{
                 gsap.to(NbDiv,{duration:.7,translateX:"25vw"})
-                rotateStuff(top,.7,0)
-                rotateStuff(bot,.7,0)
+                rotateStuff(top,.5,0)
+                rotateStuff(bot,.5,0)
                 setClicked(false);
                 diss.style.opacity=1;
             }

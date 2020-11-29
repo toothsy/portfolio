@@ -1,0 +1,17 @@
+@mixin backgroundStuff($url,$size) {
+    background-color: $background;
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: no-repeat;    
+}
+@mixin centerShit() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin dontCenter() {
+    display: block;
+    justify-content: unset; ;
+    align-items: unset;
+
+}
