@@ -13,7 +13,7 @@ export default function Homepage() {
         console.log(clicked)
         if(window.innerWidth<360){
             if(clicked){
-                gsap.to(content,{duration:.5,rotateY:40,translateX:"-10vw",perspective:"1000"})
+                gsap.to(content,{duration:.5,rotateY:40,translateX:"-10vw"})
                 }
             else{
                 gsap.to(content,{duration:.5,rotateY:0,translateX:"0vw"})
@@ -29,6 +29,7 @@ export default function Homepage() {
     }
     }
     ,[clicked])
+    
     return (
         <div id="content" ref={el=>content=el}>
     
