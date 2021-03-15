@@ -1,50 +1,56 @@
-#toggle{
-    @include dontCenter();
-    display: flex;
-    flex-direction: column;
+.hamburger{
     position: fixed;
-    z-index: $aage+1;
-    top:80vh;
-    right:10px;
-    height: 20vh;
-    width: 10vw;
-} 
+    top:5em;
+    right:5em;
+    z-index: $aage+2;
+    height: 10vh;
+    width: 3vw;
+}
 .line {
     padding: .2em ;
     margin-bottom: 5em;
-    background-color: white;
+    background-color: rgb(139, 0, 0);
     cursor:pointer;
     margin: .1em;
-}
-#nav{
-    @include dontCenter();
-    display: flex;
-    flex-direction: row;
-    color: rgb(255, 255, 255);
-    position: fixed;
-    width: 30vw;
-    top:0px;
-    right:-30vw;
-    height: 100vh;
-    background-color: black;
-    z-index: $aage + 1;
-    @include centerShit();
-    #links a{
-        color: whitesmoke;
-        display: block;
-        margin-bottom: 4em;
-        text-decoration: none;
-        cursor:pointer;
-    }  
     
 }
-@media (min-width:360px){
-    #toggle{
-        top:6vh;
-        width: 37px;
-    }
-    #nav{
-        width: 15vw;
-        right: -25vw;
+.nav{
+    width:20em;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right:-39em;
+    // height: 100vh;
+    overflow-x: hidden;
+    background: rgb(189, 52, 52);
+    z-index: $aage + 2;
+    .links a{
+        font-family: "Imprima",sans-serif;
+        font-size: 1.4rem;
+        display: block;
+        color: rgb(255, 255, 255);
+        margin-bottom: 4em;
+        text-decoration: none;
+        cursor:pointer;     
+    }  
+    
+    
+    .links{
+        padding-top: 15em;
+        padding-left: 2em;
+        overflow: hidden;
+        z-index: $aage+2;
     }
 }
+// @media (min-width:360px){
+//     #toggle{
+//         top:6vh;
+//         width: 37px;
+//     }
+//     .nav{
+//         width: 25vw;
+//         right:-50em;
+//         top:0;
+        
+//     }
+// }

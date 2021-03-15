@@ -6,7 +6,7 @@
 html,body{
     box-sizing: border-box;
     margin:0px;
-    font-family: Ubuntu;
+    font-family: "Imprima",sans-serif;
     background-color: $background;
-    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
