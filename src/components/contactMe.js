@@ -1,8 +1,9 @@
 import React from 'react'
+import ContactSVG from '../builtSvg/ExpContactSvg'
 const contactMe=()=>{
     return (
-        <div id="contactMe">
-            this is contactMe
+        <div id="contact" className="container">
+            <ContactSVG />
         </div>
     )
 }

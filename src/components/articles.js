@@ -1,10 +1,11 @@
 import React from 'react'
-const articles=()=>{
+import ArtSVG from '../builtSvg/ExpArtSvg'
+const Articles=()=>{
     return (
-        <div id="articles">
-            this is articles
+        <div id="article" className="container light">
+            <ArtSVG />
         </div>
     )
 }
 
-export default  articles
+export default  Articles

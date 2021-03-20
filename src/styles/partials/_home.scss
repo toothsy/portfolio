@@ -1,0 +1,58 @@
+@import "./menu";
+.text{
+    color:#FF6584;
+    position:absolute;
+    width:50vw;
+    font-size:3em;
+    left:10vw;
+    top:40vh;
+    z-index: 6;
+    
+}
+.bg{
+    position: inherit;
+    top:0;
+    left:0;
+    overflow:hidden;
+}
+.manAndFloor{
+    position: absolute;
+    top:50%;
+    left:0;
+    z-index: 3;
+}
+.sky{
+    position: relative;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+.mountain{
+    position: absolute;
+    top:30%;
+    left:30%;
+
+    z-index: 1;
+}
+@media (min-width: 768px){
+    .text{
+        z-index: 6;
+        width:100vw;
+    }
+    .bg{
+        height: 100vh;
+        width: 100vw;
+    }
+    .mountain,.manAndFloor{
+        height:60%;
+        width :50%
+    }
+    .mountain{
+        top:10%;
+        left:35%;
+    }
+    .manAndFloor{
+        top:40%;
+        left:35%;
+    }
+}
