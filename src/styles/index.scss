@@ -1,6 +1,7 @@
 
 @import "./partials/variables";
 @import "./partials/functions";
+@import "./partials/articles";
 // @import "./partials/hamburger";
 @import "./partials/home";
 html,body{
@@ -14,8 +15,8 @@ html,body{
 }
 
 .container{
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         position: relative;
         top: 0;
         left: 0;

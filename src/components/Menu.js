@@ -1,18 +1,18 @@
-import React from 'react'
+import React,{useRef}from 'react'
 // import {Event}from '../App'
 
 export default function Menu() {
 
-    const changeColor=e=>{
-        let y = window.screenY
-        console.log(y)
-        console.log("this is page off set",window.pageYOffset)
+    let checkBox = useRef(null)
+    const cancellableEvent=e=>{
+        console.log(checkBox.checked)
+        checkBox.checked = !checkBox.checked
     }
     return ( 
-    <div className="menu-wrap">
-        <input type="checkbox" className="toggler" />
-        <div className="hamburger" onScroll={changeColor}> <div></div>  </div>
-        <div className="menu">
+    <div className="menu-wrap" >
+        <input type="checkbox" ref={el=>checkBox=el} className="toggler" />
+        <div className="hamburger" > <div></div>  </div>
+        <div className="menu"  onClick={cancellableEvent}>
             <div>
                 <div>
                     <div>
