@@ -1,9 +1,6 @@
-
 @import "./partials/variables";
 @import "./partials/functions";
-@import "./partials/articles";
-// @import "./partials/hamburger";
-@import "./partials/home";
+
 html,body{
     box-sizing: border-box;
     margin:0;
@@ -20,6 +17,8 @@ html,body{
         position: relative;
         top: 0;
         left: 0;
+        display:flex;
+        flex-direction: row;
     }
 
 .light{
@@ -48,8 +47,8 @@ html,body{
     margin-top: 1.8em;
 }
 .projectS,.articleS,.contactS,.aboutS{
-    width:45vw;
-    height:100vh;
+    width:40%;
+    height:100%;
     display:flex;
     flex-direction: column;
 }
@@ -57,8 +56,90 @@ html,body{
     width:100%;
     border: 10px solid #000;
 }
-// @media (max-width: 768px){
-//     html{
-//         overflow:hidden;
+
+.Left{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    height:100%;
+    width:48.5%;
+    position:relative;
+}
+
+.Right{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    height:100%;
+    width:48.5%;
+    position:relative;
+}
+.separator{
+    height:100%;
+    width:3%;
+}
+
+.Bg{
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+.uC,.bgUc{
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+h1{
+    font-size:6em;
+    font-weight: 400;
+    position: relative;
+    top:-1%;
+}
+@media (max-width: 900px) {
+    .Left{
+        width:0;
+        visibility:hidden;
+    }
+    .Right{
+        width:100%;
+    }
+
+    .separator{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+    }
+    .Bg{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        z-index: 1;
+    }
+    h1{
+        top:10%;
+    }
+
+}
+
+// @media (max-width: 700px) and (max-width: 900px) {
+//     .separator{
+//         visibility:hidden;
+//         opacity:    0;
+//     }
+//     .Left{
+//         z-index:2;
+//         opacity: 0.5;
+//         width:100%;
+//         left:0
 //     }
 // }
+
+
+@import "./partials/articles";
+// @import "./partials/hamburger";
+@import "./partials/home";

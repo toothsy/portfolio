@@ -1,8 +1,54 @@
-.ArtLeft{
+.mt{
+    position: inherit;
+    top: 0;
+    left:0;
+    width:60%;
     display:flex;
-    justify-content:center;
-    height:100%;
-    width:50%;
-    position:relative;
+    flex-direction: row;
 }
 
+.man{
+    position: inherit;
+    left:-35%;
+    top:16%
+}
+.DB{
+    position: inherit;
+    height:40%;
+    width:30%;
+}
+.separator{
+    background: linear-gradient(180deg, #3F3D56 0%, rgba(59, 58, 65, 0.03) 100%)
+
+}
+
+.Right{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-5%;
+}
+.articleContent{
+    display:flex;
+    width: 80%;
+    height:70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // overflow-y: scroll;
+    // ::-webkit-scrollbar{
+    //     border-radius: 2em;
+    // }
+}
+
+@media (max-width: 900px) {
+    .DB{
+        visibility:hidden;
+        opacity:    0;
+    }
+    .man{
+        left:-50%;
+    }
+
+
+}

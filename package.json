@@ -18,8 +18,7 @@
     "webpack": "^4.44.2"
   },
   "scripts": {
-    "build:svg": "npx @svgr/cli -d ./src/builtSvg  ./src/svg ",
-    "start": "react-scripts start && npm run build:svg",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
