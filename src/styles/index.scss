@@ -1,5 +1,8 @@
-@import "./partials/variables";
 @import "./partials/functions";
+$background:#3F3D56;
+$fullH:100vh;
+$fullW:100vw;
+$scaleFactor:0.4;
 
 html,body{
     box-sizing: border-box;
@@ -43,7 +46,7 @@ html,body{
     cursor: pointer;
 
 }
-.footer span{
+.footer >span{
     @include centerShit();
     padding-top: 2em;
     text-decoration: none;
@@ -71,35 +74,30 @@ html,body{
 
 .Right{
     display:flex;
-    justify-content:center;
+    // justify-content:center;
     flex-direction: row;
     height:100%;
     width:48.5%;
     position:relative;
-}
-.separator{
-    height:100%;
-    width:3%;
+    .Right-content{
+        display:flex;
+        height:100%;
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top:-5%;
+        h1{
+            font-size:6em;
+            font-weight: 400;
+            position: absolute;
+            top:0;
+        }
+    }
 }
 
-.Bg{
-    height: 20%;
-    width: 20%;
-    position: absolute;
-    top: 40%;
-    left: 0;
-}
-.uC,.bgUc{
-    position: absolute;
-    top: 10%;
-    left: 0;
-}
-h1{
-    font-size:6em;
-    font-weight: 400;
-    position: relative;
-    top:-1%;
-}
+
 @media (max-width: 900px) {
     .Left{
         width:0;
@@ -107,42 +105,14 @@ h1{
     }
     .Right{
         width:100%;
-    }
-
-    .separator{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 30%;
-    }
-    .Bg{
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        position:relative;
-        z-index: 1;
-    }
-    h1{
-        top:10%;
+        h1{
+            top:10%;
+        }
     }
 
 }
 
-// @media (max-width: 700px) and (max-width: 900px) {
-//     .separator{
-//         visibility:hidden;
-//         opacity:    0;
-//     }
-//     .Left{
-//         z-index:2;
-//         opacity: 0.5;
-//         width:100%;
-//         left:0
-//     }
-// }
-
-
 @import "./partials/articles";
 // @import "./partials/hamburger";
 @import "./partials/home";
+@import "./partials/project";

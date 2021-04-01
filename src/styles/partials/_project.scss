@@ -1,0 +1,72 @@
+.mAC{
+     position: inherit;
+     left:20%;
+     z-index: 3;
+     top: 10%;
+}
+.backG{
+     position: inherit;
+     z-index: 2;
+     left: -20%;
+}
+.card-box{
+     @include centerShit() ;
+}
+.card{
+     display: flex;
+     flex-direction: row;
+     width: 30vw;
+     height: 10vh;
+     background-color: #D4D1D1;
+     border-radius: .8em;
+     box-shadow: -3px 3px 10px 0px ;
+     @include centerShit();
+     .l{
+             height: 100%;
+             width: 25%;
+             border-right:#443f80 solid .2vw ;
+             @include centerShit();
+
+             flex-direction: column;
+             .sf{
+               font-weight: 900;
+               font-size: 4em;
+               color: #443f80;
+             }
+             .lf{
+               font-weight: 200;
+               font-size: 1em;
+             }
+ 
+     }
+     .r{
+         width: 75%;
+         height: 100%;
+         @include centerShit();
+         font-size: 1.3em;
+     }
+ }
+
+ @media (max-width: 900px) {
+ .card{
+      width: 80%;
+      
+     .l{
+          width: 35%;
+        .sf{
+         font-weight: 450;
+         font-size: 2em;
+
+          }
+          .lf{
+               font-weight: 400;
+               font-size: .8em;
+          }
+     }
+     .r{
+          width: 65%;
+         font-size: 1.05em;
+
+     }
+ }
+}

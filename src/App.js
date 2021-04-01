@@ -8,7 +8,6 @@ import Art from './components/Articles'
 import Menu from './components/Menu'
 import Footer from './components/footer'
 
-
 export default function App() {
   return (
     < >
@@ -21,7 +20,5 @@ export default function App() {
             <Footer/>
 
     </>
-    
-  )
-}
+  )}
 
