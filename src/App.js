@@ -18,7 +18,6 @@ export default function App() {
             <AM/>
             <CM/>
             <Footer/>
-
-    </>
+  </>
   )}
 

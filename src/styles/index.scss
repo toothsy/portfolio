@@ -12,6 +12,7 @@ html,body{
     background-color: $background;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    user-select: none;
 }
 
 .container{
@@ -74,7 +75,6 @@ html,body{
 
 .Right{
     display:flex;
-    // justify-content:center;
     flex-direction: row;
     height:100%;
     width:48.5%;

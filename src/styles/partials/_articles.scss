@@ -17,11 +17,9 @@
     height:40%;
     width:30%;
 }
-
-
 .articleContent{
     width: 80%;
-    height:70%;
+    height:100%;
     @include centerShit();
 }
 
@@ -36,18 +34,16 @@
 .Bg{
     height: 100%;
     width: 100%;
-
+    @include centerShit();
 }
 .uC,.bgUc{
     position: absolute;
-    top: 10%;
-    left: 0;
-    width: 60vw;
-    height: 30vh;
+    height: 100%;
+    width: 100%;
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .DB{
         visibility:hidden;
         opacity:    0;

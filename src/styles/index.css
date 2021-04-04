@@ -7,6 +7,10 @@ html, body {
   background-color: #3F3D56;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container {
@@ -197,7 +201,7 @@ html, body {
 
 .articleContent {
   width: 80%;
-  height: 70%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,17 +228,24 @@ html, body {
 .Bg {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .uC, .bgUc {
   position: absolute;
-  top: 10%;
-  left: 0;
-  width: 60vw;
-  height: 30vh;
+  height: 100%;
+  width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .DB {
     visibility: hidden;
     opacity: 0;
@@ -603,6 +614,11 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .card {
@@ -613,12 +629,16 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 30vw;
-  height: 10vh;
-  background-color: #D4D1D1;
+  width: 20vh;
+  height: 20vh;
+  background: #d4d1d1d1;
   border-radius: .8em;
   -webkit-box-shadow: -3px 3px 10px 0px;
           box-shadow: -3px 3px 10px 0px;
+  margin: 1.2vh;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  cursor: pointer;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -630,8 +650,9 @@ html, body {
 
 .card .l {
   height: 100%;
-  width: 25%;
-  border-right: #443f80 solid .2vw;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,7 +670,7 @@ html, body {
 
 .card .l .sf {
   font-weight: 900;
-  font-size: 4em;
+  font-size: 6em;
   color: #443f80;
 }
 
@@ -659,7 +680,7 @@ html, body {
 }
 
 .card .r {
-  width: 75%;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,26 +692,62 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.3em;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.card .invisible {
+  opacity: 0;
+  z-index: 6;
+}
+
+.card .blur {
+  background: #d4d1d121;
+}
+
+.card .i {
+  position: relative;
+  top: 0;
+  right: 5%;
+  width: 25%;
+  height: 25%;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  z-index: 6;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
 }
 
 @media (max-width: 900px) {
   .card {
-    width: 80%;
+    width: 100%;
   }
   .card .l {
-    width: 35%;
+    width: 100%;
   }
   .card .l .sf {
-    font-weight: 450;
-    font-size: 2em;
+    font-weight: 600;
+    font-size: 4em;
   }
   .card .l .lf {
     font-weight: 400;
     font-size: .8em;
   }
   .card .r {
-    width: 65%;
-    font-size: 1.05em;
+    width: 100%;
+    font-size: .8em;
   }
 }
 /*# sourceMappingURL=index.css.map */

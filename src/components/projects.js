@@ -4,6 +4,7 @@ import backG from '../svg/backG.svg'
 import Card from './Card'
 
 const projects=()=>{
+
     return (
         <div id="project" className="container dark">
             <div className="Left">
@@ -15,7 +16,14 @@ const projects=()=>{
                 <div className="Right-content">
                     <h1>Projects</h1>
                         <div className="card-box">
-                        <Card sf="CG" lf="Color Game"  r="This is a simple game about guessing a color from the given rgb value." />
+                        <Card  sf="CG" 
+                                    lf="Color Game"  
+                                    r="This is a simple game about guessing a color from the given rgb value." 
+                                    link={" "} />
+                        <Card  sf="CG" 
+                                    lf="Color Game"  
+                                    r="This is a simple game about guessing a color from the given rgb value." 
+                                    link={" "} />
                         </div>
                 </div>
             </div>
