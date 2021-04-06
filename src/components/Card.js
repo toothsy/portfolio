@@ -1,17 +1,19 @@
 import React from 'react'
 import i from '../svg/i.svg'
-export default function Card({sf,lf,r,link}) {
+export default function Card({sf,lf,r,link,id}) {
      const makeInfoVisible = (e) =>{
-          let info = document.querySelector('.r');
-          let title = document.querySelector('.card')
-          title.classList.toggle("blur")
+          let id = e.target.dataset.id
+          let info = document.querySelectorAll('.aage')[id];
+          // let title = document.querySelector('.card')
+          info.classList.toggle("blur")
           info.classList.toggle("invisible")
       }
+      let width = window.innerWidth;
      return (
           <div className="card">
-               <a href={link} className="overlay"> </a>
-               <div className="l"><span className="sf"> {sf}</span><span className="lf">{lf}</span> </div>
-               <div className="r invisible">{r}</div>
-               <img src={i} alt="i" onClick={makeInfoVisible} className="i"/>
+               {width<900?<img src={i} alt="i" onClick={makeInfoVisible} className="i" data-id={id} />:null}
+               <div className="aage"><h2 className="sf"> {sf}</h2><h3 className="lf">{lf}</h3></div>
+               <div className="peeche"><h3 className="desc">{r}</h3>
+               </div>
           </div>
      )}

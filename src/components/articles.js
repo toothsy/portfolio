@@ -19,7 +19,7 @@ const Article=()=>{
             <div className="separator"></div>
             <div className="Right">
                 <div className="Right-content">
-                    <h1>Articles</h1>
+                    <h1 className="title">Articles</h1>
                     <div className="articleContent">
                         <div className="Bg">
                             <img src={uC} alt="underConstrunction" className="uC" />

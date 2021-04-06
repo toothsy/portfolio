@@ -21,7 +21,7 @@
 }
 .manAndFloor{
     position: absolute;
-    top:45%;
+    top:35%;
     left:10%;
     z-index: 3;
 }
@@ -33,7 +33,7 @@
 }
 .mountain{
     position: absolute;
-    top:30%;
+    top:20%;
     left:0;
 
     z-index: 1;
@@ -52,35 +52,15 @@
         width :50%
     }
     .mountain{
-        top:10%;
+        top:2%;
         left:35%;
     }
     .manAndFloor{
-        top:40%;
+        top:20%;
         left:35%;
     }
     .text > span{
         opacity: .9;
         font-size:.75em;
-    }
-}
-
-@keyframes go-up{
-    from {
-        transform:translateY(0px);
-    }
-    to{
-        transform:translateY(-200px);
-
-    }
-}
-
-@keyframes go-down{
-    from {
-        transform:translateY(0px);
-    }
-    to{
-        transform:translateY(200px);
-
     }
 }
