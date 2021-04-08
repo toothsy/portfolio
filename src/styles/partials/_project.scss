@@ -11,83 +11,158 @@
 }
 .card-box{
      display:grid;
-     grid-template-columns: auto ;
+     grid-template-columns: auto auto auto;
      position:relative;
      top: 15%;
-
+     z-index: 5;
+}
+.card{
+         .peeche{
+               position: relative;
+               top:-25%;
+               width: 20vh;
+               transition: opacity 275ms,transform 275ms;
+               color:#d4d1d1e7;
+			opacity:0;
+			transform: scale(0);
+     }
+		.aage{
+			width: 15vh;
+			height: 17vh;
+			background: #d4d1d1e7;
+			border-radius:.8em;
+			box-shadow: -3px 3px 10px 0px ;
+			margin:1.2vh 0;
+			@include centerShit();
+			flex-direction: column;
+			position: relative;
+			top:-5%;
+			left:0%;
+			transition: transform 275ms;
+			.sf{
+					position: relative;
+					font-weight: 900;
+					font-size: 4em;
+					color: #443f80;
+					height:auto;
+					margin:.4em 0 0 0 ;
+					top:-10%;
+					left:0%;
+			}
+			.lf{
+				position: relative;
+				top:-20%;
+				font-weight: 200;
+				font-size: 1.2em;
+				margin:.4em 0 0 0 ;
+			}
+		}
+		.i{
+			position:relative;
+			top: 10%;
+			left: 80%;
+			align-self: start;
+			z-index: 7;
+		}
+		.close{
+			display:none;
+			position:relative;
+			top: 10%;
+			left: 38%;
+		}
+}
+.desc{
+	position:inherit;
+	font-size: 1em;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.background{
+     background:#234;
+     position:absolute;
+     top: 0;
+     bottom: 0;
+     right: -10%;
+     left: -10%;
+     z-index: -1;
+     border-radius:.6em;
+     transform:scale(.5,.5);
+     opacity:0;
+}
+.upar{
+     transform:translateY(-50%);
 }
 
-.card{
-     justify-content: center;
-    align-items: center;
-     width: 15vh;
-     height: 17vh;
-     background: #d4d1d1d1;
-     border-radius:.8em;
-     box-shadow: -3px 3px 10px 0px ;
-     margin:1.2vh 0;
-     transition: all 250ms ease;
+.grow{
+     transition:
+     transform 275ms ease-in-out,
+     opacity 275ms cubic-bezier(0, 0, 1, 0.43);
+     transform: scale(1.4,.7);
+     opacity: 1;
+}
 
-     .peeche{
-               display:none;
-             
- 
+@media (max-width: 900px) and (hover:none){
+     .card-box{
+          display:grid;
+          grid-template-columns: auto ;
      }
-     .aage{
-          @include centerShit();
-          flex-direction: column;
-          position: relative;
-          top:-5%;
-          left:-2.5%;
-          .sf{
-               font-weight: 900;
-               font-size: 4em;
-               color: #443f80;
-               height:auto;
-               margin:.4em 0 0 0 ;
-             }
-          .lf{
-               font-weight: 200;
-               font-size: 0.7em;
-               margin:.4em 0 0 0 ;
-               
-             }
-     }
-     .i{
-          position:relative;
-          top: 5%;
-          left: 75%;
-          align-self: start;
-          z-index: 7;
-     }
- }
- .desc{
-     position:inherit;
-     font-size: 1em;
-     top: 0;
-     left: 0;
-     z-index: 5;
- }
- @media (max-width: 900px) {
- .card{
-      width: 35vw;
-      height:20vh;
+     .card{
+          .i{
+               position:relative;
+               top: -0%;
+               left: 80%;
+               align-self: start;
+               z-index: 7;
+          }
      .aage{
           top:-20%;
           left:-2.5%;
-        .sf{
-         font-weight: 600;
-         font-size: 4em;
-          }
-          .lf{
-               font-weight: 400;
-               font-size: 1.2em;
-          }
+          width: 20vh;
+          height:25vh;
+		.sf{
+		position: relative;
+		font-weight: 700;
+		font-size: 4em;
+		top:-10%;
+		}
+		.lf{
+			position: relative;
+			font-weight: 400;
+			font-size: 1.4em;
+			top:-15%;
+		}
+		.close{
+			left:2;
+			top:0%;
+		}
+		.background{
+			top: 0%;
+			bottom: 30%;
+			right: 3%;
+			left: -2%;
+		}
      }
      .peeche{
+		position: relative;
+		top:-30%;
           width: 40vw;
-         font-size: .8em;
+          font-size: 1.2em;
+		z-index: 2;			
+     }
 
      }
- }
+	.upar{
+		transform:translateY(-20%);
+	}
+	.grow{
+		transition:
+		transform 275ms ease-in-out,
+		opacity 275ms cubic-bezier(0, 0, 1, 0.43);
+		transform: scale(1,.5);
+		opacity: 1;
+	}
+	#project{
+		height: 150vh;
+	}
 }

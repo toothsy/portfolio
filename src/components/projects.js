@@ -25,7 +25,7 @@ let cardsInfo = [{
         "id":2}
 ]
     return (
-        <div id="project " className="container dark">
+        <div id="project" className="container dark">
             <div className="Left">
                 <img src={mAC}  alt="proSVG1" className="mAC"/>
                 <img src={backG} alt="proSVG2"  className="backG"/>

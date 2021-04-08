@@ -568,35 +568,35 @@ h1, h2, h3 {
 .card-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   position: relative;
   top: 15%;
+  z-index: 5;
 }
 
-.card {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.card .peeche {
+  position: relative;
+  top: -25%;
+  width: 20vh;
+  -webkit-transition: opacity 275ms,-webkit-transform 275ms;
+  transition: opacity 275ms,-webkit-transform 275ms;
+  transition: opacity 275ms,transform 275ms;
+  transition: opacity 275ms,transform 275ms,-webkit-transform 275ms;
+  color: #d4d1d1e7;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.card .aage {
   width: 15vh;
   height: 17vh;
-  background: #d4d1d1d1;
+  background: #d4d1d1e7;
   border-radius: .8em;
   -webkit-box-shadow: -3px 3px 10px 0px;
           box-shadow: -3px 3px 10px 0px;
   margin: 1.2vh 0;
-  -webkit-transition: all 250ms ease;
-  transition: all 250ms ease;
-}
-
-.card .peeche {
-  display: none;
-}
-
-.card .aage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,31 +612,47 @@ h1, h2, h3 {
           flex-direction: column;
   position: relative;
   top: -5%;
-  left: -2.5%;
+  left: 0%;
+  -webkit-transition: -webkit-transform 275ms;
+  transition: -webkit-transform 275ms;
+  transition: transform 275ms;
+  transition: transform 275ms, -webkit-transform 275ms;
 }
 
 .card .aage .sf {
+  position: relative;
   font-weight: 900;
   font-size: 4em;
   color: #443f80;
   height: auto;
   margin: .4em 0 0 0;
+  top: -10%;
+  left: 0%;
 }
 
 .card .aage .lf {
+  position: relative;
+  top: -20%;
   font-weight: 200;
-  font-size: 0.7em;
+  font-size: 1.2em;
   margin: .4em 0 0 0;
 }
 
 .card .i {
   position: relative;
-  top: 5%;
-  left: 75%;
+  top: 10%;
+  left: 80%;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
   z-index: 7;
+}
+
+.card .close {
+  display: none;
+  position: relative;
+  top: 10%;
+  left: 38%;
 }
 
 .desc {
@@ -647,26 +663,101 @@ h1, h2, h3 {
   z-index: 5;
 }
 
-@media (max-width: 900px) {
-  .card {
-    width: 35vw;
-    height: 20vh;
+.background {
+  background: #234;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -10%;
+  left: -10%;
+  z-index: -1;
+  border-radius: .6em;
+  -webkit-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
+  opacity: 0;
+}
+
+.upar {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.grow {
+  -webkit-transition: opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
+  transition: opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
+  transition: transform 275ms ease-in-out, opacity 275ms cubic-bezier(0, 0, 1, 0.43);
+  transition: transform 275ms ease-in-out, opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
+  -webkit-transform: scale(1.4, 0.7);
+          transform: scale(1.4, 0.7);
+  opacity: 1;
+}
+
+@media (max-width: 900px) and (hover: none) {
+  .card-box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .card .i {
+    position: relative;
+    top: -0%;
+    left: 80%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    z-index: 7;
   }
   .card .aage {
     top: -20%;
     left: -2.5%;
+    width: 20vh;
+    height: 25vh;
   }
   .card .aage .sf {
-    font-weight: 600;
+    position: relative;
+    font-weight: 700;
     font-size: 4em;
+    top: -10%;
   }
   .card .aage .lf {
+    position: relative;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    top: -15%;
+  }
+  .card .aage .close {
+    left: 2;
+    top: 0%;
+  }
+  .card .aage .background {
+    top: 0%;
+    bottom: 30%;
+    right: 3%;
+    left: -2%;
   }
   .card .peeche {
+    position: relative;
+    top: -30%;
     width: 40vw;
-    font-size: .8em;
+    font-size: 1.2em;
+    z-index: 2;
+  }
+  .upar {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  .grow {
+    -webkit-transition: opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
+    transition: opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
+    transition: transform 275ms ease-in-out, opacity 275ms cubic-bezier(0, 0, 1, 0.43);
+    transition: transform 275ms ease-in-out, opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
+    -webkit-transform: scale(1, 0.5);
+            transform: scale(1, 0.5);
+    opacity: 1;
+  }
+  #project {
+    height: 150vh;
   }
 }
 /*# sourceMappingURL=index.css.map */
