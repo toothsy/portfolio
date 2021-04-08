@@ -7,11 +7,9 @@ export default function Card({sf,lf,r,link,id}) {
      const makeInfoVisible = (e) =>{
           let id = e.target.dataset.id
           let aage = document.querySelectorAll('.aage')[id];
-          let background = document.querySelectorAll('.background')[id];
           let peeche = document.querySelectorAll('.peeche')[id];
           let close = document.querySelectorAll('.close')[id];
           aage.classList.toggle("upar")
-         if(width>900) background.classList.toggle("grow")
           peeche.style.opacity=1
           peeche.style.transform="scale(1)"
           e.target.style.display="none"
@@ -21,11 +19,9 @@ export default function Card({sf,lf,r,link,id}) {
       const makeInfoInvisible = (e) =>{
           let id = e.target.dataset.id
           let aage = document.querySelectorAll('.aage')[id];
-          let background = document.querySelectorAll('.background')[id];
           let peeche = document.querySelectorAll('.peeche')[id];
           let i = document.querySelectorAll('.i')[id];
           aage.classList.toggle("upar")
-          if(width>900) background.classList.toggle("grow")
           peeche.style.opacity=0
           peeche.style.transform="scale(0)"
           e.target.style.display="none"
@@ -41,6 +37,5 @@ export default function Card({sf,lf,r,link,id}) {
                     <h3 className="lf">{lf}</h3>
                </div>
                <div className="peeche" ><h3 className="desc">{r}</h3></div>
-              {width<900?null:<div className="background"></div>}
           </div>
      )}

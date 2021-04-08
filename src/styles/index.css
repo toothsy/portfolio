@@ -38,7 +38,7 @@ h1, h2, h3 {
 }
 
 .dark {
-  background-color: #443f80;
+  background-color: #282736;
 }
 
 .footer {
@@ -646,6 +646,8 @@ h1, h2, h3 {
       -ms-grid-row-align: start;
       align-self: start;
   z-index: 7;
+  -webkit-transition: display 250ms;
+  transition: display 250ms;
 }
 
 .card .close {
@@ -657,7 +659,7 @@ h1, h2, h3 {
 
 .desc {
   position: inherit;
-  font-size: 1em;
+  font-size: .9em;
   top: 0;
   left: 0;
   z-index: 5;
