@@ -1,5 +1,5 @@
 @import "./partials/functions";
-$background:#3F3D56;
+$background:rgb(40, 39, 54);
 $fullH:100vh;
 $fullW:100vw;
 $scaleFactor:0.4;
@@ -47,14 +47,16 @@ h1,h2,h3{
 .logo-wrapper{
     transform: scale($scaleFactor);
     @include centerShit();
-    cursor: pointer;
-
 }
-.footer >span{
+.attributing{
     @include centerShit();
-    padding-top: 2em;
-    text-decoration: none;
-    margin-top: 1.8em;
+    position: relative;
+    top:30%;
+    a{
+        text-decoration: none;
+        color:rgb(39, 110, 241);
+    }
+
 }
 .projectS,.articleS,.contactS,.aboutS{
     width:40%;
@@ -132,6 +134,11 @@ h1,h2,h3{
 	.titleDark{
 		color:#ff6584;
 	}
+    .attributing{
+        font-size: .9em;
+        top:35%;
+
+    }
 }
 
 @import "./partials/articles";

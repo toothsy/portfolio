@@ -1,19 +1,17 @@
 import React from 'react'
-import Logo from '../builtSvg/Logo'
+import Logo from '../svg/Logo'
 const footer=()=>{
     return (
         <div className="footer">
-            <span >
-                All the amazing illustration are from 
-                    <a href="https://undraw.co/">
-                    unDraw
-                    </a> 
-                    and 
-                    <a href="https://freepik.com">
-                    freepik
+        <div className="attributing">
+            <p >All the amazing illustration are from  <a href="https://undraw.co/">unDraw</a> and <a href="https://freepik.com">freepik
                     </a>
-            </span>
-           <div className="logo-wrapper" href="#"> <Logo/></div>
+            </p>
+            </div>
+           <div className="logo-wrapper" href="#">
+
+             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><Logo/></a>
+            </div>
         </div>
     )
 }

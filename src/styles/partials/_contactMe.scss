@@ -11,10 +11,9 @@
 	width: 40%;
 	max-width: 550px;
 	background: #3F3D56;
-	padding: 30px;
+	padding: 5%;
 	border-radius: .5em;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	
 	font-size:1.6em;
    }
   
@@ -56,7 +55,6 @@
    .msg textarea{
 	height:20%;
    }
-
    
 .btn {
 	background: #6C63FF;
@@ -68,6 +66,21 @@
 	cursor: pointer;
 	text-transform: uppercase;
  }
+ .c-logo-1{
+		position: absolute;
+		width: 10%;
+		height:10%;
+		left:30%;
+		top:85%;
+		
+ }
+ .c-logo-2{
+	position: absolute;
+	width: 10%;
+	height:10%;
+	left:60%;
+	top:85%;
+}
  
  @media (max-width: 900px){
 	 .wrapper{
@@ -86,5 +99,11 @@
    .input-fields,
    .msg{
 	width: 100%;
+   }
+   .c-logo-1{
+	   top:90%;
+   }
+   .c-logo-2{
+	   top:90%;
    }
  }

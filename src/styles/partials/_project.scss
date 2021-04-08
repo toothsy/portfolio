@@ -14,7 +14,7 @@
      display:grid;
      grid-template-columns: auto auto auto;
      position:relative;
-     top: 25%;
+     top: 15%;
      z-index: 5;
 }
 .card{
@@ -29,7 +29,7 @@
      }
 		.aage{
 			width: 15vh;
-			height: 17vh;
+			height: 16vh;
 			background: #d4d1d1e7;
 			border-radius:.8em;
 			box-shadow: -3px 3px 10px 0px ;
@@ -76,27 +76,14 @@
 }
 .desc{
 	position:inherit;
-	font-size: .9em;
+	font-size: .75rem;
 	top: 0;
 	left: 0;
 	z-index: 5;
 }
-.background{
-     background:#234;
-     position:absolute;
-     top: 0;
-     bottom: 0;
-     right: -10%;
-     left: -10%;
-     z-index: -1;
-     border-radius:.6em;
-     transform:scale(.5,.5);
-     opacity:0;
-}
 .upar{
      transform:translateY(-50%);
 }
-
 .grow{
      transition:
      transform 275ms ease-in-out,
@@ -104,26 +91,26 @@
      transform: scale(1.4,.7);
      opacity: 1;
 }
-
 @media (max-width: 900px) and (hover:none){
-
      .card-box{
           display:grid;
-          grid-template-columns: auto ;
+          grid-template-columns: auto auto ;
+		top:15%;
+		left:5%;
      }
      .card{
           .i{
                position:relative;
-               top: -0%;
-               left: 80%;
+               top: 10%;
+               left: 70%;
                align-self: start;
                z-index: 7;
           }
      .aage{
           top:-20%;
           left:-2.5%;
-          width: 20vh;
-          height:25vh;
+          width: 18vh;
+          height:20vh;
 		.sf{
 		position: relative;
 		font-weight: 700;
@@ -137,24 +124,19 @@
 			top:-15%;
 		}
 		.close{
-			left:2;
-			top:0%;
-		}
-		.background{
-			top: 0%;
-			bottom: 30%;
-			right: 3%;
-			left: -2%;
+			left:35%;
+			top:10%;
 		}
      }
      .peeche{
 		position: relative;
 		top:-30%;
           width: 40vw;
-          font-size: 1.2em;
-		z-index: 2;			
+		z-index: 2;		
+		.desc{
+			font-size:.8rem;
+		}	
      }
-
      }
 	.upar{
 		transform:translateY(-20%);
@@ -169,6 +151,4 @@
 	#project{
 		height: 150vh;
 	}
-
-	
 }

@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Imprima",sans-serif;
-  background-color: #3F3D56;
+  background-color: #282736;
   scroll-behavior: smooth;
   overflow-x: hidden;
   -webkit-user-select: none;
@@ -74,10 +74,9 @@ h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
 }
 
-.footer > span {
+.attributing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,9 +86,13 @@ h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2em;
+  position: relative;
+  top: 30%;
+}
+
+.attributing a {
   text-decoration: none;
-  margin-top: 1.8em;
+  color: #276ef1;
 }
 
 .projectS, .articleS, .contactS, .aboutS {
@@ -203,6 +206,10 @@ h1, h2, h3 {
   }
   .titleDark {
     color: #ff6584;
+  }
+  .attributing {
+    font-size: .9em;
+    top: 35%;
   }
 }
 
@@ -349,7 +356,7 @@ h1, h2, h3 {
   position: relative;
   width: 70%;
   height: 4px;
-  background-color: #3F3D56;
+  background-color: #282736;
   border-radius: .2em;
   -webkit-transition: all 0.3s cubic-bezier(0.42, 0.68, 0.36, 2.63);
   transition: all 0.3s cubic-bezier(0.42, 0.68, 0.36, 2.63);
@@ -604,7 +611,7 @@ h1, h2, h3 {
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   position: relative;
-  top: 25%;
+  top: 15%;
   z-index: 5;
 }
 
@@ -624,7 +631,7 @@ h1, h2, h3 {
 
 .card .aage {
   width: 15vh;
-  height: 17vh;
+  height: 16vh;
   background: #d4d1d1e7;
   border-radius: .8em;
   -webkit-box-shadow: -3px 3px 10px 0px;
@@ -692,24 +699,10 @@ h1, h2, h3 {
 
 .desc {
   position: inherit;
-  font-size: .9em;
+  font-size: .75rem;
   top: 0;
   left: 0;
   z-index: 5;
-}
-
-.background {
-  background: #234;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -10%;
-  left: -10%;
-  z-index: -1;
-  border-radius: .6em;
-  -webkit-transform: scale(0.5, 0.5);
-          transform: scale(0.5, 0.5);
-  opacity: 0;
 }
 
 .upar {
@@ -731,13 +724,15 @@ h1, h2, h3 {
   .card-box {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    top: 15%;
+    left: 5%;
   }
   .card .i {
     position: relative;
-    top: -0%;
-    left: 80%;
+    top: 10%;
+    left: 70%;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -746,8 +741,8 @@ h1, h2, h3 {
   .card .aage {
     top: -20%;
     left: -2.5%;
-    width: 20vh;
-    height: 25vh;
+    width: 18vh;
+    height: 20vh;
   }
   .card .aage .sf {
     position: relative;
@@ -762,21 +757,17 @@ h1, h2, h3 {
     top: -15%;
   }
   .card .aage .close {
-    left: 2;
-    top: 0%;
-  }
-  .card .aage .background {
-    top: 0%;
-    bottom: 30%;
-    right: 3%;
-    left: -2%;
+    left: 35%;
+    top: 10%;
   }
   .card .peeche {
     position: relative;
     top: -30%;
     width: 40vw;
-    font-size: 1.2em;
     z-index: 2;
+  }
+  .card .peeche .desc {
+    font-size: .8rem;
   }
   .upar {
     -webkit-transform: translateY(-20%);
@@ -871,7 +862,7 @@ h1, h2, h3 {
   width: 40%;
   max-width: 550px;
   background: #3F3D56;
-  padding: 30px;
+  padding: 5%;
   border-radius: .5em;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -956,6 +947,22 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.c-logo-1 {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  left: 30%;
+  top: 85%;
+}
+
+.c-logo-2 {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  left: 60%;
+  top: 85%;
+}
+
 @media (max-width: 900px) {
   .wrapper {
     width: 65%;
@@ -976,6 +983,12 @@ h1, h2, h3 {
   .input-fields,
   .msg {
     width: 100%;
+  }
+  .c-logo-1 {
+    top: 90%;
+  }
+  .c-logo-2 {
+    top: 90%;
   }
 }
 /*# sourceMappingURL=index.css.map */
