@@ -4,7 +4,7 @@ import secondMan from '../svg/secondMan.svg'
 import github from '../svg/github.svg'
 import linkedin from '../svg/linkedin.svg'
 
-const contactMe=()=>{
+const ContactMe=()=>{
     return (
         <div id="contact" className="container light">
             <div className="Left">
@@ -42,4 +42,4 @@ const contactMe=()=>{
     )
 }
 
-export default contactMe
+export default ContactMe
