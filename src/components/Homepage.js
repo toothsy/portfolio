@@ -2,7 +2,6 @@ import React from 'react'
 import sky from "../svg/sky.svg";
 import mountain from "../svg/mountain.svg";
 import mAF from "../svg/manAndFloor.svg";
-import {Parallax} from 'react-scroll-parallax'
 const Homepage = ()=> {
 
     return (
