@@ -1,66 +1,85 @@
 @import "./menu";
+
 .text{
-    color:#FF6584;
-    position:absolute;
-    width:75%;
-    font-size:3.1em;
-    left:10%;
-    top:15%;
+    position: absolute;
     z-index: 6;
-    
-}
-.text > span{
-    opacity: .9;
-    font-size:.8em;
+    width:100vw;
+    color:#FF6584;
+    font-size:4em;
+    width:75%;    
+    font-weight: 900;
+    top:30%;
+    left:10%;
+    z-index: 6;
 }
 .bg{
-    position: inherit;
-    top:0;
-    left:0;
-    overflow:hidden;
+    height: 100vh;
+    width: 100vw;
 }
-.manAndFloor{
-    position: absolute;
-    top:35%;
-    left:10%;
-    z-index: 3;
-}
-.sky{
-    position: relative;
-    top:0;
-    left:0;
-    z-index: 2;
+.mountain,.manAndFloor{
+    height:60%;
+    width :50%
 }
 .mountain{
     position: absolute;
-    top:20%;
-    left:0;
-
+    top:10%;
+    left:35%;
     z-index: 1;
 }
-@media (min-width: 768px){
-    .text{
-        z-index: 6;
-        width:100vw;
-    }
-    .bg{
-        height: 100vh;
-        width: 100vw;
-    }
-    .mountain,.manAndFloor{
-        height:60%;
-        width :50%
-    }
-    .mountain{
-        top:2%;
-        left:35%;
-    }
-    .manAndFloor{
-        top:20%;
-        left:35%;
+.manAndFloor{
+    position: absolute;
+    top:30%;
+    left:35%;
+    z-index: 3;
+}
+ .text2{
+    position: absolute;
+    opacity: .9;
+    font-size:2rem;
+    font-weight: 300;
+    color:#FF6584;
+
+}
+.sky{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    overflow:hidden;
+}
+@media (max-width:900px){
+    .text{  
+        left:10%;
+        top:15%;
+        font-size:2.15em;
+   
     }
     .text > span{
-        opacity: .9;
-        font-size:.75em;
+        opacity: .8;
+        font-size:.8em;
+        font-weight: 200;
+    }
+    .bg{
+        position: inherit;
+        top:0;
+        left:0;
+        overflow:hidden;
+    }
+    .manAndFloor{
+        position: absolute;
+        left:-5%;
+        top:25%;
+        height:100%;
+        width:100%;
+
+    }
+
+    .mountain{
+        position: absolute;
+        height:90%;
+        width:80%;
+        left: 10%;
+        top:20%;
+
     }
 }

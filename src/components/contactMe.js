@@ -1,9 +1,39 @@
 import React from 'react'
-import ContactSVG from '../builtSvg/ExpContactSvg'
+import treeAndMan from '../svg/treeAndMan.svg'
+import secondMan from '../svg/secondMan.svg'
+
 const contactMe=()=>{
     return (
-        <div id="contact" className="container dark">
-            <ContactSVG />
+        <div id="contact" className="container light">
+            <div className="Left">
+                <img src={treeAndMan} alt="treeAndMan" className="treeAndMan"/>
+                <img src={secondMan} alt="secondMan" className="secondMan"/>
+            </div>
+            <div className="separator"></div>
+            <div className="Right">
+                <div className="Right-content">
+                        <h1 className="title smol">Contact Me</h1>
+                        <div className="wrapper">
+                                <form action="POST" data-netlify="true" className="contact-form">
+                                    <div class="input-fields">
+                                    <input type="text" class="input" placeholder="Name" name="name"/>
+                                    <input type="text" class="input" placeholder="Email Address" name="email"/>
+                                    <input type="text" class="input" placeholder="Subject" name="subject"/>
+                                    </div>
+                                    <div className="msg" name="message">
+                                    <textarea rows={5} placeholder="Say Hi!!"></textarea>
+                                    <div className="input-fields">
+                                        <div data-netlify-recaptcha="true">
+                                            
+                                        </div>
+                                    </div>
+                                    <div className="btn">send</div>
+                                    </div>
+                                </form>
+                                </div>
+
+                </div>
+            </div>
         </div>
     )
 }

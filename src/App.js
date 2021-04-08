@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React,{createContext} from 'react'
 import Home from './components/Homepage'
-import CM from './components/contactMe'
+import CM from './components/ContactMe'
 import AM from './components/aboutMe'
 import Pro from './components/projects'
 import Art from './components/Articles'
@@ -15,8 +15,8 @@ export default function App() {
             <Home/>
             <Art/>
             <Pro/>
-            <AM/>
             <CM/>
+            <AM/>
             <Footer/>
   </>
   )}

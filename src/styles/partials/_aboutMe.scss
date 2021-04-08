@@ -1,0 +1,53 @@
+.lady{
+	position: absolute;
+	top:31%;
+	left:40%;
+	z-index: 2;
+}
+.road{
+	position: absolute;
+	top:25%;
+	z-index: 1;
+}
+.am{
+	position: absolute;
+    	font-size:1.5rem;
+    	font-weight: 200;
+    	color:#FF6584;
+	top:40%;
+	left:10%;
+}
+.gridOne{
+	display:grid;
+	grid-template-columns: auto auto auto auto auto ;
+	position: relative;
+	top:25%;
+	img{
+		margin:.9em 1.2em;
+		height:64px;
+		width:64px;
+	}
+}
+@media (max-width: 900px) {
+	.smol{
+		font-size: 4.75em;
+	}
+	.am{
+		font-size:1.3rem;
+		position:relative;
+		top:20%;
+		left:5%;
+	}
+	.gridOne{
+		width:70%;
+		top:20%;
+		grid-template-columns: auto auto auto;
+		img{
+			margin:.3em .9em;
+		}
+	}
+	#about{
+		height:120vh;
+	}
+
+}

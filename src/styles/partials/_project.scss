@@ -9,11 +9,12 @@
      z-index: 2;
      left: -20%;
 }
+
 .card-box{
      display:grid;
      grid-template-columns: auto auto auto;
      position:relative;
-     top: 15%;
+     top: 25%;
      z-index: 5;
 }
 .card{
@@ -105,6 +106,7 @@
 }
 
 @media (max-width: 900px) and (hover:none){
+
      .card-box{
           display:grid;
           grid-template-columns: auto ;
@@ -167,4 +169,6 @@
 	#project{
 		height: 150vh;
 	}
+
+	
 }

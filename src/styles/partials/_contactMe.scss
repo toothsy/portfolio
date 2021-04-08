@@ -1,0 +1,90 @@
+.secondMan{
+	position: relative;
+	left:-20%;
+	top:15%;
+}
+.wrapper{
+	position: relative;
+	top: 10%;
+	left: 0%;
+	height:40%;
+	width: 40%;
+	max-width: 550px;
+	background: #3F3D56;
+	padding: 30px;
+	border-radius: .5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	
+	font-size:1.6em;
+   }
+  
+.contact-form{
+	display: flex;
+	flex-direction: column;
+   }
+::placeholder  {
+	font-family: "Imprima",sans-serif;
+	font-weight: 400;
+	font-size:1.6em;
+   }
+   .input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+	
+   }
+   
+   .input-fields,
+   .msg{
+	width: 100%;
+	
+   }
+   
+   .input-fields .input,
+   .msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0px;
+	border-bottom: 2px solid #6C63FF;
+	padding: 1%;
+	color: #6C63FF;
+	max-height: 30%;
+	width: 100%;
+	height: 40%;
+   }
+   
+   .msg textarea{
+	height:20%;
+   }
+
+   
+.btn {
+	background: #6C63FF;
+	text-align: center;
+	padding: 15px;
+	margin-top: 10%;
+	border-radius: 5px;
+	color: #3F3D56;
+	cursor: pointer;
+	text-transform: uppercase;
+ }
+ 
+ @media (max-width: 900px){
+	 .wrapper{
+		 width:65%;
+		 height:50%;
+		 position:relative;
+		 top:15%;
+		 left:0%;
+	 }
+   .contact-form{
+	flex-direction: column;
+   }
+   .msg textarea{
+	height: 80px;
+   }
+   .input-fields,
+   .msg{
+	width: 100%;
+   }
+ }

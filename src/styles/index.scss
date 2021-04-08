@@ -17,12 +17,8 @@ html,body{
 h1,h2,h3{
     margin: .5em  0 ;
 }
-// .title{
-//     position: relative;
-//     top:10%;
-// }
 .container{
-        height: 100vh;
+        height: 95vh;
         width: 100vw;
         position: relative;
         top: 0;
@@ -96,16 +92,33 @@ h1,h2,h3{
         position: relative;
         top:-5%;
         h1{
-            font-size:6em;
-            font-weight: 400;
             position: absolute;
-            top:0;
+            top:5%;
         }
     }
 }
-
-
+.title{
+	color:#1a1919;
+    font-size:6em;
+    font-weight: 400;
+}
+.titleDark{
+    color:#d4d1d1e7;
+    font-size:6em;
+    font-weight: 400;
+}
+.separator{
+    height:100%;
+    width:3%;
+    background: linear-gradient(180deg, rgb(40, 39, 54) 0%, rgba(59, 58, 65, 0.03) 100%);
+}
+.inv-sep{
+    background: linear-gradient(180deg,  #CECBCB ,rgb(40, 39, 54) 100%);
+}
 @media (max-width: 900px) {
+    .title{
+        color:#ff6584;
+    }
     .Left{
         width:0;
         visibility:hidden;
@@ -116,10 +129,14 @@ h1,h2,h3{
             top:10%;
         }
     }
-
+	.titleDark{
+		color:#ff6584;
+	}
 }
 
 @import "./partials/articles";
 // @import "./partials/hamburger";
 @import "./partials/home";
 @import "./partials/project";
+@import "./partials/aboutMe";
+@import "./partials/contactMe";

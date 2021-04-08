@@ -23,14 +23,7 @@
     @include centerShit();
 }
 
-.separator{
-    height:100%;
-    width:3%;
-    background: linear-gradient(180deg, #3F3D56 0%, rgba(59, 58, 65, 0.03) 100%);
-}
-.inv-sep{
-    background: linear-gradient(180deg,  #CECBCB ,#443f80 100%);
-}
+
 .Bg{
     height: 100%;
     width: 100%;
@@ -38,6 +31,7 @@
 }
 .uC,.bgUc{
     position: absolute;
+    top:10%;
     height: 100%;
     width: 100%;
 }

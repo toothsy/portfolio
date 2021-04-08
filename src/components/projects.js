@@ -33,7 +33,7 @@ let cardsInfo = [{
             <div className="separator inv-sep"></div>
             <div className="Right">
                 <div className="Right-content">
-                    <h1 className="title">Projects</h1>
+                    <h1 className="titleDark">Projects</h1>
                         <div className="card-box">
                         {cardsInfo.map((cardInfo,index)=><Card sf={cardInfo.sf} lf={cardInfo.lf} r={cardInfo.right} id={cardInfo.id} link={cardInfo.link} key={index} />)}
                         </div>
