@@ -16,11 +16,15 @@ const ContactMe=()=>{
                 <div className="Right-content">
                         <h1 className="title smol">Contact Me</h1>
                         <div className="wrapper">
-                                <form action="POST" 
+                                <form 
+                                    netlify
+                                    name="contact" 
+                                    method="post"
                                     data-netlify="true"
                                     data-netlify-honeypot="bot-field"
                                     data-netlify-recaptcha="true"
                                     className="contact-form">
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <div class="input-fields">
                                     <input type="text" class="input" placeholder="Name" name="name"/>
                                     <input type="text" class="input" placeholder="Email Address" name="email"/>
