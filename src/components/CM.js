@@ -20,8 +20,6 @@ const ContactMe=()=>{
                                     netlify
                                     name="contact" 
                                     method="post"
-                                    data-netlify="true"
-                                    data-netlify-honeypot="bot-field"
                                     data-netlify-recaptcha="true"
                                     className="contact-form">
                                     <input type="hidden" name="form-name" value="contact" />
