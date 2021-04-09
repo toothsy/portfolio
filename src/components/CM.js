@@ -16,7 +16,11 @@ const ContactMe=()=>{
                 <div className="Right-content">
                         <h1 className="title smol">Contact Me</h1>
                         <div className="wrapper">
-                                <form action="POST" data-netlify={true}className="contact-form">
+                                <form action="POST" 
+                                    data-netlify="true"
+                                    data-netlify-honeypot="bot-field"
+                                    data-netlify-recaptcha="true"
+                                    className="contact-form">
                                     <div class="input-fields">
                                     <input type="text" class="input" placeholder="Name" name="name"/>
                                     <input type="text" class="input" placeholder="Email Address" name="email"/>
@@ -25,7 +29,7 @@ const ContactMe=()=>{
                                     <div className="msg" name="message">
                                     <textarea rows={5} placeholder="Say Hi!!"></textarea>
                                     <div className="input-fields">
-                                        <div data-netlify-recaptcha={true}>
+                                        <div className="verify" data-netlify-recaptcha="true">
                                             
                                         </div>
                                     </div>
