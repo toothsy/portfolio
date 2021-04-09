@@ -21,12 +21,26 @@ const ContactMe=()=>{
                                     name="contact" 
                                     method="post"
                                     data-netlify-recaptcha="true"
+                                    onSubmit="submit"
                                     className="contact-form">
                                     <input type="hidden" name="form-name" value="contact" />
                                     <div class="input-fields">
-                                    <input type="text" class="input" placeholder="Name" name="name"/>
-                                    <input type="text" class="input" placeholder="Email Address" name="email"/>
-                                    <input type="text" class="input" placeholder="Subject" name="subject"/>
+                                        <div >
+                                            <label >
+                                                <input type="text" class="input" placeholder="Name" name="name"/>
+                                            </label>
+                                        </div>
+                                        <div >
+                                            <label >
+                                                <input type="text" class="input" placeholder="Email Address" name="email"/>
+                                            </label>
+                                        </div>
+                                        <div >
+                                            <label >
+                                                <input type="text" class="input" placeholder="Subject" name="subject"/>
+                                            </label>
+                                        </div>
+
                                     </div>
                                     <div className="msg" name="message">
                                     <textarea rows={5} placeholder="Say Hi!!"></textarea>
@@ -35,7 +49,7 @@ const ContactMe=()=>{
                                             
                                         </div>
                                     </div>
-                                    <div className="btn">send</div>
+                                    <button type="submit" className="btn">send</button>
                                     </div>
                                 </form>
                                 </div>

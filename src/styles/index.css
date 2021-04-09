@@ -858,7 +858,7 @@ h1, h2, h3 {
   position: relative;
   top: 10%;
   left: 0%;
-  height: 40%;
+  height: 45%;
   width: 40%;
   max-width: 550px;
   background: #3F3D56;
@@ -938,13 +938,24 @@ h1, h2, h3 {
 
 .btn {
   background: #6C63FF;
+  position: relative;
+  width: 70%;
   text-align: center;
-  padding: 15px;
-  margin-top: 10%;
-  border-radius: 5px;
+  height: 15%;
   color: #3F3D56;
-  cursor: pointer;
   text-transform: uppercase;
+  border: 2px solid #6C63FF;
+  /* Border thickness, line style, and color */
+  border-radius: 70px;
+  /* Adds curve to border corners */
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Make letters uppercase */
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  position: relative;
+  top: 0;
 }
 
 .c-logo-1 {
