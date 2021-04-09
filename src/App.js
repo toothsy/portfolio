@@ -1,11 +1,11 @@
 // eslint-disable-next-line
-import React,{createContext} from 'react'
+import React from 'react'
 import Home from './components/Homepage'
-import AM from './components/aboutMe'
-import Pro from './components/projects'
+import AM from './components/AboutMe'
+import Pro from './components/Projects'
 import Art from './components/Articles'
 import Menu from './components/Menu'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import CM from './components/ContactMe'
 
 export default function App() {

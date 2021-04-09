@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../svg/Logo'
-const footer=()=>{
+const Footer=()=>{
     return (
         <div className="footer">
         <div className="attributing">
@@ -16,4 +16,4 @@ const footer=()=>{
     )
 }
 
-export default  footer
+export default  Footer

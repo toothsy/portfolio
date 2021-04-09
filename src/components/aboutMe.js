@@ -18,7 +18,7 @@ import tf from '../svg/tf.svg'
 import ts from '../svg/ts.svg'
 import python from '../svg/python.svg'
 
-const aboutMe=()=>{
+const AboutMe=()=>{
     return (
         <div id="about" className="container dark">
              <div className="Left">
@@ -56,4 +56,4 @@ const aboutMe=()=>{
     )
 }
 
-export default  aboutMe
+export default  AboutMe
