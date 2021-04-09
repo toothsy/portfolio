@@ -1,7 +1,7 @@
 import React from 'react'
 import mAC from '../svg/manAndCar.svg'
 import backG from '../svg/backG.svg'
-import Card from './Card'
+import Card from './C'
 
 const projects=()=>{
 let cardsInfo = [{
