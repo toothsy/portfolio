@@ -17,17 +17,18 @@ const ContactMe=()=>{
                         <h1 className="title smol">Contact Me</h1>
                         <div className="wrapper">
                                 <form 
-                                    netlify
+                                    className="contact-form"
+
+                                    data-netlify="true"
                                     name="contact" 
                                     method="post"
-                                    data-netlify-recaptcha="true"
-                                    onSubmit="submit"
-                                    className="contact-form">
+                                    onSubmit="submit"                                    >
+
                                     <input type="hidden" name="form-name" value="contact" />
                                     <div class="input-fields">
                                         <div >
                                             <label >
-                                                <input type="text" class="input" placeholder="Name" name="name"/>
+                                                <input type="text" class="input" placeholder="Name" name="full-name"/>
                                             </label>
                                         </div>
                                         <div >
@@ -43,12 +44,7 @@ const ContactMe=()=>{
 
                                     </div>
                                     <div className="msg" name="message">
-                                    <textarea rows={5} placeholder="Say Hi!!"></textarea>
-                                    <div className="input-fields">
-                                        <div className="verify" data-netlify-recaptcha="true">
-                                            
-                                        </div>
-                                    </div>
+                                    <textarea rows={5} placeholder="Say Hi!!" type="submit"></textarea>
                                     <button type="submit" className="btn">send</button>
                                     </div>
                                 </form>
