@@ -14,13 +14,13 @@ let cardsInfo = [{
         "sf":"3-P",
         "lf":"3-Page-demo",
         "right":"A basic implementation of server authentication with a log-in and registering" ,
-        "link":"#project",
+        "link":"https://toothsy.github.io/colorGame/",
         "id":1},
     {
         "sf":"R A",
         "lf":"Rest Api demo",
         "right":"Here the site renders data fetched from jsonplace-holder site and is using material-table" ,
-        "link":"#project",
+        "link":"https://freedom-boi.netlify.app/",
         "id":2}
 ]
     return (
@@ -38,8 +38,6 @@ let cardsInfo = [{
                         </div>
                 </div>
             </div>
-            
-
         </div>
     )
 }

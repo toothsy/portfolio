@@ -52,11 +52,11 @@ h1,h2,h3{
     @include centerShit();
     position: relative;
     top:30%;
-    a{
-        text-decoration: none;
-        color:rgb(39, 110, 241);
-    }
-
+    
+}
+a{
+    text-decoration: none;
+    color:rgb(67, 130, 246);
 }
 .projectS,.articleS,.contactS,.aboutS{
     width:40%;

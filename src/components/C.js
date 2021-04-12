@@ -35,6 +35,9 @@ export default function Card({sf,lf,r,link,id}) {
                     <h2 className="sf"> {sf}</h2>
                     <h3 className="lf">{lf}</h3>
                </div>
-               <div className="peeche" ><h3 className="desc">{r}</h3></div>
+               <div className="peeche" >
+                    <h3 className="desc">{r}</h3>
+                    <a href={link} > here's the link</a>
+               </div>
           </div>
      )}
