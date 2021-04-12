@@ -615,6 +615,10 @@ h1, h2, h3 {
   z-index: 5;
 }
 
+.card {
+  margin-left: .2em;
+}
+
 .card .peeche {
   position: relative;
   top: -25%;
@@ -681,7 +685,9 @@ h1, h2, h3 {
 .card .i {
   position: relative;
   top: 10%;
-  left: 80%;
+  left: 75%;
+  bottom: 50%;
+  right: 50%;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -858,7 +864,7 @@ h1, h2, h3 {
   position: relative;
   top: 10%;
   left: 0%;
-  height: 45%;
+  height: 50%;
   width: 40%;
   max-width: 550px;
   background: #3F3D56;
@@ -867,6 +873,11 @@ h1, h2, h3 {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 1.6em;
+}
+
+.feba {
+  color: red;
+  font-size: .5em;
 }
 
 .contact-form {
@@ -879,28 +890,32 @@ h1, h2, h3 {
           flex-direction: column;
 }
 
-::-webkit-input-placeholder {
+label, ::-webkit-input-placeholder {
   font-family: "Imprima",sans-serif;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1em;
+  color: #6C63FF;
 }
 
-:-ms-input-placeholder {
+label, :-ms-input-placeholder {
   font-family: "Imprima",sans-serif;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1em;
+  color: #6C63FF;
 }
 
-::-ms-input-placeholder {
+label, ::-ms-input-placeholder {
   font-family: "Imprima",sans-serif;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1em;
+  color: #6C63FF;
 }
 
-::placeholder {
+label, ::placeholder {
   font-family: "Imprima",sans-serif;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1em;
+  color: #6C63FF;
 }
 
 .input-fields {

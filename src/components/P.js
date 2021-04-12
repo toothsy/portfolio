@@ -2,7 +2,7 @@ import React from 'react'
 import mAC from '../svg/manAndCar.svg'
 import backG from '../svg/backG.svg'
 import Card from './C'
-
+import axios from 'axios'
 const projects=()=>{
 let cardsInfo = [{
         "sf":"CG",
@@ -12,15 +12,15 @@ let cardsInfo = [{
         "id":0
     },
     {
-        "sf":"CG",
-        "lf":"Color Game",
-        "right":"This is a simple game about guessing a color from the given rgb value." ,
+        "sf":"3-P",
+        "lf":"3-Page-demo",
+        "right":"A basic implementation of server authentication with a log-in and registering" ,
         "link":"#project",
         "id":1},
     {
-        "sf":"CG",
-        "lf":"Color Game",
-        "right":"This is a simple game about guessing a color from the given rgb value." ,
+        "sf":"R A",
+        "lf":"Rest Api demo",
+        "right":"Here the site renders data fetched from jsonplace-holder site and is using material-table" ,
         "link":"#project",
         "id":2}
 ]

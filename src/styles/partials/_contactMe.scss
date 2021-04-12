@@ -7,7 +7,7 @@
 	position: relative;
 	top: 10%;
 	left: 0%;
-	height:45%;
+	height:50%;
 	width: 40%;
 	max-width: 550px;
 	background: #3F3D56;
@@ -17,14 +17,19 @@
 	font-size:1.6em;
    }
   
+.feba{
+	color:red;
+	font-size:.5em;
+}
 .contact-form{
 	display: flex;
 	flex-direction: column;
    }
-::placeholder  {
+label,::placeholder{
 	font-family: "Imprima",sans-serif;
 	font-weight: 400;
-	font-size:1.6em;
+	font-size:1em;
+	color: #6C63FF;
    }
    .input-fields{
 	display: flex;
