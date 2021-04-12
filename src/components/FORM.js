@@ -1,6 +1,5 @@
 import React from 'react'
 import { useFormik } from 'formik'
-import axios from 'axios'
 export default function FORM() {
 
 	const validateLogic = val =>{
@@ -16,26 +15,21 @@ export default function FORM() {
 		}
 		return error;
 	 }
-	 const submitHandler=val=>{
-		axios({
-			method:"post",
-			url:'https://doot-server.herokuapp.com/email',
-			data:{
+	 const submitHandler=async val=>{
+		let response = await window.emailjs.send(
+			"doot-doot","template_cj0",
+			{	from_name: val.name,
 				email:val.email,
-				name:val.name,
-				message:val.message,
-				subject:val.subject
-			}
-		})
-		 console.log("sent stuff")
-		console.log(val);
+				content:val.message
+				}
+			)
+		console.log("sent stuff",response)
 
 	 }
 	 const formik = useFormik({
 		initialValues:{
 		    name:"",
 		    email:"",
-		    subject:"",
 		    message:""
 		},
 		validate:validateLogic,
@@ -54,9 +48,6 @@ export default function FORM() {
 				<input type="text" className="input" name="email" onChange={formik.handleChange} value={formik.values.email}/>
 
 				{formik.errors.email && formik.touched.email && (<div className="feba">{formik.errors.email}</div>)}
-
-				<label htmlFor="subject">Subject</label>
-				<input type="text" className="input" name="subject" onChange={formik.handleChange} value={formik.values.subject}/>
 				<div  className="msg" name="message"><textarea name="message" onChange={formik.handleChange} value={formik.values.message} rows={5} placeholder="Say Hi!!" type="submit"></textarea></div>
 				<button type="submit" className="btn">send</button>
 			</div>

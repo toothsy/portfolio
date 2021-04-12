@@ -759,7 +759,7 @@ h1, h2, h3 {
   .card .aage .lf {
     position: relative;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.2em;
     top: -15%;
   }
   .card .aage .close {
@@ -841,7 +841,7 @@ h1, h2, h3 {
     left: 5%;
   }
   .gridOne {
-    width: 70%;
+    width: 85%;
     top: 20%;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
@@ -864,7 +864,7 @@ h1, h2, h3 {
   position: relative;
   top: 10%;
   left: 0%;
-  height: 50%;
+  height: 40%;
   width: 40%;
   max-width: 550px;
   background: #3F3D56;
@@ -877,7 +877,9 @@ h1, h2, h3 {
 
 .feba {
   color: red;
-  font-size: .5em;
+  font-size: .4em;
+  position: relative;
+  top: 0;
 }
 
 .contact-form {
@@ -916,6 +918,22 @@ label, ::placeholder {
   font-weight: 400;
   font-size: 1em;
   color: #6C63FF;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.2em;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.2em;
+}
+
+::-ms-input-placeholder {
+  font-size: 1.2em;
+}
+
+::placeholder {
+  font-size: 1.2em;
 }
 
 .input-fields {
@@ -971,6 +989,7 @@ label, ::placeholder {
   margin: 4px 2px;
   position: relative;
   top: 0;
+  left: 15%;
 }
 
 .c-logo-1 {
@@ -996,7 +1015,7 @@ label, ::placeholder {
 @media (max-width: 900px) {
   .wrapper {
     width: 65%;
-    height: 50%;
+    height: 45%;
     position: relative;
     top: 15%;
     left: 0%;
@@ -1015,10 +1034,14 @@ label, ::placeholder {
     width: 100%;
   }
   .c-logo-1 {
-    top: 90%;
+    width: 90%;
+    top: 87%;
+    left: -10%;
   }
   .c-logo-2 {
-    top: 90%;
+    width: 90%;
+    top: 87%;
+    left: 20%;
   }
 }
 /*# sourceMappingURL=index.css.map */
