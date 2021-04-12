@@ -140,10 +140,15 @@ a{
 
     }
 }
+@media all and (min-width: 1030px)   and (max-width: 1368px) {
+    .attributing{
+        font-size: .9em;
+        top:45%;
 
+    }
+}
 @import "./partials/articles";
-// @import "./partials/hamburger";
 @import "./partials/home";
-@import "./partials/project";
 @import "./partials/aboutMe";
 @import "./partials/contactMe";
+@import "./partials/project";

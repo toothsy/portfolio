@@ -51,3 +51,12 @@
 	}
 
 }
+
+@media all and (min-width: 1030px)   and (max-width: 1368px) {
+	.road{
+		transform: scale(.8);
+	}
+	.gridOne{
+		top:33.5%;
+	}
+}

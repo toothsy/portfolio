@@ -62,3 +62,18 @@
         z-index: 1;
     }
 }
+
+@media all and (min-width: 1030px)   and (max-width: 1368px) {
+.tree{
+    position:relative;
+    height:80%;
+    top:10%;
+}
+.man{
+    top:10%;
+    left:-60%;
+}
+.DB{
+    top:10%;
+}
+}

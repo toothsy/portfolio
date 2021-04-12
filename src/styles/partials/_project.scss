@@ -1,5 +1,5 @@
 .mAC{
-     position: inherit;
+     position: relative;
      left:20%;
      z-index: 3;
      top: 10%;
@@ -154,4 +154,25 @@
 	#project{
 		height: 150vh;
 	}
+}
+
+@media all and (min-width: 1030px)   and (max-width: 1368px) {
+	.card .i, .card .close{
+		top: 20%;
+	}
+	.card .aage .lf {
+		font-size:1em;
+	}
+	.mAC{
+		left:45%;
+		height:50%;
+		top:35%;
+	}
+
+	.backG{
+		left:-45%;
+		height:50%;
+		top:20%;
+	}
+
 }

@@ -1,6 +1,10 @@
+.treeAndMan{
+	position: relative;
+	left:10%;
+}
 .secondMan{
 	position: relative;
-	left:-20%;
+	left:0%;
 	top:15%;
 }
 .wrapper{
@@ -132,4 +136,18 @@ label,::placeholder{
 	top:87%;
 	left:20%;
    }
+ }
+
+ @media all and (min-width: 1030px)   and (max-width: 1368px) {
+	.wrapper{
+		height: 45%;
+	}
+	.treeAndMan{
+		position: relative;
+		left:15%;
+		transform:scale(.8)
+	}
+	.secondMan{
+		left:-20%;
+	}
  }
