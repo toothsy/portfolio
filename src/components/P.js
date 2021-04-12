@@ -2,7 +2,6 @@ import React from 'react'
 import mAC from '../svg/manAndCar.svg'
 import backG from '../svg/backG.svg'
 import Card from './C'
-import axios from 'axios'
 const projects=()=>{
 let cardsInfo = [{
         "sf":"CG",
