@@ -14,7 +14,7 @@ import nodeJS from '../svg/nodeJS.svg'
 import opencv from '../svg/opencv.svg'
 import reactJs from '../svg/react-js.svg'
 import tcl from '../svg/tcl.svg'
-import tf from '../svg/tf.svg'
+import tfjs from '../svg/tfjs.png'
 import ts from '../svg/ts.svg'
 import python from '../svg/python.svg'
 
@@ -47,7 +47,7 @@ const AboutMe=()=>{
                      <img src={python} alt="python"/>
                      <img src={reactJs} alt="reactJs"/>
                      <img src={tcl} alt="tcl"/>
-                     <img src={tf} alt="tf"/>
+                     <img src={tfjs} alt="tf"/>
                      <img src={ts} alt="ts"/>
                  </div>
             </div>

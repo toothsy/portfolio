@@ -2,7 +2,7 @@ import React from 'react'
 import i from '../svg/i.svg'
 import close from '../svg/close.svg'
 export default function Card({sf,lf,r,link,id}) {
-     let width = window.innerWidth
+     // let width = window.innerWidth
      const makeInfoVisible = (e) =>{
           let id = e.target.dataset.id
           let aage = document.querySelectorAll('.aage')[id];
