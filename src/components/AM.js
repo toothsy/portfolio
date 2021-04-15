@@ -34,21 +34,21 @@ const AboutMe=()=>{
                     The following languages ,library and  frameworks are the ones <br/> I'm familiar with
                  </p>
                  <div className="gridOne">
-                     <img src={c} alt="c"/>
-                     <img src={css} alt="css"/>
-                     <img src={express} alt="express"/>
-                     <img src={git} alt="git"/>
-                     <img src={html} alt="html"/>
-                     <img src={java} alt="java"/>
-                     <img src={js} alt="js"/>
-                     <img src={mysql} alt="mysql"/>
-                     <img src={nodeJS} alt="nodeJS"/>
-                     <img src={opencv} alt="opencv"/>
-                     <img src={python} alt="python"/>
-                     <img src={reactJs} alt="reactJs"/>
-                     <img src={tcl} alt="tcl"/>
-                     <img src={tfjs} alt="tf"/>
-                     <img src={ts} alt="ts"/>
+                     <img height="64" width="64" src={c} alt="c"/>
+                     <img height="64" width="64" src={css} alt="css"/>
+                     <img height="64" width="64" src={express} alt="express"/>
+                     <img height="64" width="64" src={git} alt="git"/>
+                     <img height="64" width="64" src={html} alt="html"/>
+                     <img height="64" width="64" src={java} alt="java"/>
+                     <img height="64" width="64" src={js} alt="js"/>
+                     <img height="64" width="64" src={mysql} alt="mysql"/>
+                     <img height="64" width="64" src={nodeJS} alt="nodeJS"/>
+                     <img height="64" width="64" src={opencv} alt="opencv"/>
+                     <img height="64" width="64" src={python} alt="python"/>
+                     <img height="64" width="64" src={reactJs} alt="reactJs"/>
+                     <img height="64" width="64" src={tcl} alt="tcl"/>
+                     <img height="64" width="77" src={tfjs} alt="tf"/>
+                     <img height="64" width="64" src={ts} alt="ts"/>
                  </div>
             </div>
              </div>

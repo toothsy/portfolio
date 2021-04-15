@@ -10,7 +10,7 @@ const Footer=()=>{
             </div>
            <div className="logo-wrapper" href="#">
 
-             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><Logo/></a>
+             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <Logo/> </a>
             </div>
         </div>
     )
