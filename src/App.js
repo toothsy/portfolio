@@ -9,8 +9,6 @@ import Footer from './components/F'
 import CM from './components/CM'
 import swal from  'sweetalert'
 export default function App() {
-  let deferredPrompt;
-
 window.addEventListener('beforeinstallprompt',async  (e) => {
   // Prevent the mini-infobar from appearing on mobile
   e.preventDefault();
