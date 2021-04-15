@@ -7,14 +7,14 @@ let cardsInfo = [{
         "sf":"CG",
         "lf":"Color Game",
         "right":"This is a simple game about guessing a color from the given rgb value." ,
-        "link":"#project",
+        "link":"https://toothsy.github.io/colorGame/",
         "id":0
     },
     {
         "sf":"3-P",
         "lf":"3-Page-demo",
         "right":"A basic implementation of server authentication with a log-in and registering" ,
-        "link":"https://toothsy.github.io/colorGame/",
+        "link":"https://simple-3-page-demo.netlify.app/",
         "id":1},
     {
         "sf":"R A",
