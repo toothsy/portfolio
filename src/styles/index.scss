@@ -4,6 +4,28 @@ $fullH:100vh;
 $fullW:100vw;
 $scaleFactor:0.4;
 
+#instContainer{
+    .hidden{display:none;}
+    width:20vw;
+    height:20vh;
+    position:fixed;
+    top:50%;
+    left:40%;
+    background:rgba(40, 39, 54, 0.609);
+    border:.2em solid #ff6584a4;
+    z-index: 7;
+    @include centerShit();
+    
+    #butInstall{
+        height:5vh;
+        width:6vw;
+        position: relative;
+        top:25%;
+        left:20%;
+        font-family: "Imprima",sans-serif;
+    }
+}
+
 html,body{
     box-sizing: border-box;
     margin:0;
