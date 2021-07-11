@@ -950,20 +950,24 @@ label, ::placeholder {
 }
 
 .card-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
   position: relative;
   top: 15%;
   z-index: 5;
 }
 
-.card {
+.card-box .card-row {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: .5em;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.card-box .card-row .card {
   margin-left: .2em;
 }
 
-.card .peeche {
+.card-box .card-row .card .peeche {
   position: relative;
   top: -25%;
   width: 20vh;
@@ -977,7 +981,7 @@ label, ::placeholder {
           transform: scale(0);
 }
 
-.card .aage {
+.card-box .card-row .card .aage {
   width: 15vh;
   height: 16vh;
   background: #d4d1d1e7;
@@ -1007,7 +1011,7 @@ label, ::placeholder {
   transition: transform 275ms, -webkit-transform 275ms;
 }
 
-.card .aage .sf {
+.card-box .card-row .card .aage .sf {
   position: relative;
   font-weight: 900;
   font-size: 4em;
@@ -1018,7 +1022,11 @@ label, ::placeholder {
   left: 0%;
 }
 
-.card .aage .lf {
+.card-box .card-row .card .aage .gold-sf {
+  font-size: 3.6em;
+}
+
+.card-box .card-row .card .aage .lf {
   position: relative;
   top: -20%;
   font-weight: 200;
@@ -1026,7 +1034,11 @@ label, ::placeholder {
   margin: .4em 0 0 0;
 }
 
-.card .i {
+.card-box .card-row .card .aage .gold-lf {
+  font-size: .92em;
+}
+
+.card-box .card-row .card .i {
   position: relative;
   top: 10%;
   left: 75%;
@@ -1040,11 +1052,15 @@ label, ::placeholder {
   transition: display 250ms;
 }
 
-.card .close {
+.card-box .card-row .card .close {
   display: none;
   position: relative;
   top: 10%;
   left: 38%;
+}
+
+.card-box .card-row .card .gold {
+  background: gold;
 }
 
 .desc {
@@ -1071,59 +1087,74 @@ label, ::placeholder {
 }
 
 @media (max-width: 900px) and (hover: none) {
+  #project {
+    height: 150vh;
+  }
   .card-box {
+    left: 5%;
+    margin-bottom: 0;
+  }
+  .card-box .card-row {
+    position: relative;
+    top: 5%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    top: 15%;
-    left: 5%;
+    margin: 0;
   }
-  .card .i {
+  .card-box .card-row .card .i {
     position: relative;
-    top: 10%;
-    left: 70%;
+    top: 7%;
+    left: 78%;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
     z-index: 7;
   }
-  .card .aage {
+  .card-box .card-row .card .aage {
     top: -20%;
     left: -2.5%;
     width: 18vh;
     height: 20vh;
   }
-  .card .aage .sf {
+  .card-box .card-row .card .aage .sf {
     position: relative;
     font-weight: 700;
     font-size: 4em;
     top: -10%;
   }
-  .card .aage .lf {
+  .card-box .card-row .card .aage .gold-sf {
+    font-size: 3.54em;
+  }
+  .card-box .card-row .card .aage .lf {
     position: relative;
     font-weight: 400;
     font-size: .9em;
     top: -15%;
   }
-  .card .aage .close {
+  .card-box .card-row .card .aage .gold-lf {
+    font-size: .9em;
+    margin-left: .6em;
+  }
+  .card-box .card-row .card .aage .close {
     left: 35%;
     top: 10%;
   }
-  .card .peeche {
+  .card-box .card-row .card .peeche {
     position: relative;
     top: -30%;
     width: 40vw;
     z-index: 2;
   }
-  .card .peeche .desc {
+  .card-box .card-row .card .peeche .desc {
     font-size: .8rem;
   }
-  .upar {
+  .card-box .card-row .upar {
     -webkit-transform: translateY(-20%);
             transform: translateY(-20%);
   }
-  .grow {
+  .card-box .card-row .grow {
     -webkit-transition: opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
     transition: opacity 275ms cubic-bezier(0, 0, 1, 0.43), -webkit-transform 275ms ease-in-out;
     transition: transform 275ms ease-in-out, opacity 275ms cubic-bezier(0, 0, 1, 0.43);
@@ -1131,9 +1162,6 @@ label, ::placeholder {
     -webkit-transform: scale(1, 0.5);
             transform: scale(1, 0.5);
     opacity: 1;
-  }
-  #project {
-    height: 150vh;
   }
 }
 

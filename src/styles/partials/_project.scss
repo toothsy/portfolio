@@ -11,72 +11,90 @@
 }
 
 .card-box{
-     display:grid;
-     grid-template-columns: auto auto auto;
-     position:relative;
+	position:relative;
      top: 15%;
      z-index: 5;
-}
-.card{
-	margin-left:.2em;
-         .peeche{
-               position: relative;
-               top:-25%;
-               width: 20vh;
-               transition: opacity 275ms,transform 275ms;
-               color:#d4d1d1e7;
-			opacity:0;
-			transform: scale(0);
-     }
-		.aage{
-			width: 15vh;
-			height: 16vh;
-			background: #d4d1d1e7;
-			border-radius:.8em;
-			box-shadow: -3px 3px 10px 0px ;
-			margin:1.2vh 0;
-			@include centerShit();
-			flex-direction: column;
-			position: relative;
-			top:-5%;
-			left:0%;
-			transition: transform 275ms;
-			.sf{
+	.card-row{
+		display:grid;	
+		margin-bottom: .5em;
+		grid-template-columns: auto auto auto;
+		.card{
+			margin-left:.2em;
+			.peeche{
 					position: relative;
-					font-weight: 900;
-					font-size: 4em;
-					color: #443f80;
-					height:auto;
-					margin:.4em 0 0 0 ;
-					top:-10%;
+					top:-25%;
+					width: 20vh;
+					transition: opacity 275ms,transform 275ms;
+					color:#d4d1d1e7;
+					opacity:0;
+					transform: scale(0);
+				}
+
+
+				.aage{
+					width: 15vh;
+					height: 16vh;
+					background: #d4d1d1e7;
+					border-radius:.8em;
+					box-shadow: -3px 3px 10px 0px ;
+					margin:1.2vh 0;
+					@include centerShit();
+					flex-direction: column;
+					position: relative;
+					top:-5%;
 					left:0%;
+					transition: transform 275ms;
+					
+					.sf{
+							position: relative;
+							font-weight: 900;
+							font-size: 4em;
+							color: #443f80;
+							height:auto;
+							margin:.4em 0 0 0 ;
+							top:-10%;
+							left:0%;
+						}
+					.gold-sf{
+						font-size: 3.6em;
+					}
+					.lf{
+						position: relative;
+						top:-20%;
+						font-weight: 200;
+						font-size: 1.2em;
+						margin:.4em 0 0 0 ;
+					}
+					.gold-lf{
+						font-size: .92em;
+					}
+				}
+				.i{
+					position:relative;
+					top: 10%;
+					left: 75%;
+					bottom: 50%;
+					right: 50%;
+					align-self: start;
+					z-index: 7;
+					transition: display 250ms;
+				}
+				.close{
+					display:none;
+					position:relative;
+					top: 10%;
+					left: 38%;
+					
+				}
+				.gold{
+					background: gold;
+				}
+
 			}
-			.lf{
-				position: relative;
-				top:-20%;
-				font-weight: 200;
-				font-size: 1.2em;
-				margin:.4em 0 0 0 ;
-			}
-		}
-		.i{
-			position:relative;
-			top: 10%;
-			left: 75%;
-			bottom: 50%;
-			right: 50%;
-			align-self: start;
-			z-index: 7;
-			transition: display 250ms;
-		}
-		.close{
-			display:none;
-			position:relative;
-			top: 10%;
-			left: 38%;
-			
-		}
-}
+		}	
+	}
+
+
 .desc{
 	position:inherit;
 	font-size: .75rem;
@@ -95,64 +113,78 @@
      opacity: 1;
 }
 @media (max-width: 900px) and (hover:none){
-     .card-box{
-          display:grid;
-          grid-template-columns: auto auto ;
-		top:15%;
-		left:5%;
-     }
-     .card{
-          .i{
-               position:relative;
-               top: 10%;
-               left: 70%;
-               align-self: start;
-               z-index: 7;
-          }
-     .aage{
-          top:-20%;
-          left:-2.5%;
-          width: 18vh;
-          height:20vh;
-		.sf{
-		position: relative;
-		font-weight: 700;
-		font-size: 4em;
-		top:-10%;
-		}
-		.lf{
-			position: relative;
-			font-weight: 400;
-			font-size: .9em;
-			top:-15%;
-		}
-		.close{
-			left:35%;
-			top:10%;
-		}
-     }
-     .peeche{
-		position: relative;
-		top:-30%;
-          width: 40vw;
-		z-index: 2;		
-		.desc{
-			font-size:.8rem;
-		}	
-     }
-     }
-	.upar{
-		transform:translateY(-20%);
-	}
-	.grow{
-		transition:
-		transform 275ms ease-in-out,
-		opacity 275ms cubic-bezier(0, 0, 1, 0.43);
-		transform: scale(1,.5);
-		opacity: 1;
-	}
 	#project{
 		height: 150vh;
+	 }
+     .card-box{
+		left:5%;
+		margin-bottom: 0;
+		.card-row{
+			position: relative;
+			top:5%;
+			display:grid;
+			grid-template-columns: auto auto;
+			// margin-bottom: .5em;
+			margin: 0;
+			
+			.card{
+					.i{
+						position:relative;
+						top: 7%;
+						left: 78%;
+						align-self: start;
+						z-index: 7;
+					}
+				.aage{
+					top:-20%;
+					left:-2.5%;
+					width: 18vh;
+					height:20vh;
+					.sf{
+					position: relative;
+					font-weight: 700;
+					font-size: 4em;
+					top:-10%;
+					}
+					.gold-sf{
+						font-size: 3.54em;
+					}
+					.lf{
+						position: relative;
+						font-weight: 400;
+						font-size: .9em;
+						top:-15%;
+					}
+					.gold-lf{
+						font-size: .9em;
+						margin-left:.6em ;
+					}
+					.close{
+						left:35%;
+						top:10%;
+					}
+				}
+				.peeche{
+					position: relative;
+					top:-30%;
+					width: 40vw;
+					z-index: 2;		
+					.desc{
+						font-size:.8rem;
+					}	
+				}
+				}
+				.upar{
+					transform:translateY(-20%);
+				}
+				.grow{
+					transition:
+					transform 275ms ease-in-out,
+					opacity 275ms cubic-bezier(0, 0, 1, 0.43);
+					transform: scale(1,.5);
+					opacity: 1;
+				}
+			}
 	}
 }
 
