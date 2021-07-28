@@ -21,8 +21,10 @@ const ContactMe=()=>{
                             <Form/>
                         </div>
                 </div>
-                <a href="https://github.com/toothsy" ><img src={github} alt="github" className="c-logo-1"/></a>
-                <a href="https://www.linkedin.com/in/atharva-c-j/"><img src={linkedin} alt="linkedin" className="c-logo-2"/></a>
+                <div className="link">
+                    <a href="https://github.com/toothsy" ><img src={github} alt="github" className="c-logo-1"/></a>
+                    <a href="https://www.linkedin.com/in/atharva-c-j/"><img src={linkedin} alt="linkedin" className="c-logo-2"/></a>
+                </div>
             </div>
         </div>
     )

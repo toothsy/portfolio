@@ -1,3 +1,6 @@
+
+
+
 .mAC{
      position: relative;
      left:20%;
@@ -16,7 +19,7 @@
      z-index: 5;
 	.card-row{
 		display:grid;	
-		margin-bottom: .5em;
+		margin:0;
 		grid-template-columns: auto auto auto;
 		.card{
 			margin-left:.2em;
@@ -101,6 +104,7 @@
 	top: 0;
 	left: 0;
 	z-index: 5;
+	width: 70%;
 }
 .upar{
      transform:translateY(-50%);
@@ -187,12 +191,33 @@
 	}
 }
 
+$fontDescLaptop : 0.75em;
+$fontLFLaptop:1em;
+$fontSFLaptop:2.6em;
+
 @media all and (min-width: 1030px)   and (max-width: 1368px) {
 	.card .i, .card .close{
 		top: 20%;
 	}
-	.card .aage .lf {
-		font-size:1em;
+
+	.card-box{
+		.card-row{
+			.card{
+				.aage{
+					.lf{
+						font-size:$fontLFLaptop;
+
+					}
+					.gold-lf{
+						font-size: .8em;
+						margin-left:.6em ;
+					}
+					.sf{
+						font-size: $fontSFLaptop;
+					}
+				}
+			}
+		}
 	}
 	.mAC{
 		left:45%;
