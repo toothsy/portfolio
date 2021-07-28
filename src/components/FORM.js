@@ -8,7 +8,6 @@ export default function FORM() {
 		 // eslint-disable-next-line
 		let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if(!re.test(val.email)){
-	
 		    error.email="proper email needed"
 		}
 		if(!val.name){
@@ -26,7 +25,6 @@ export default function FORM() {
 			)
 		// console.log("resposonse is ",response.status)
 		response.status === 200 ? swal("Nice, the mail was sent","I will contact you ASAP!!","success"):console.log(response)
-
 	 }
 	 const formik = useFormik({
 		initialValues:{
