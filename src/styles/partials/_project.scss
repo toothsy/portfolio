@@ -25,7 +25,7 @@
 					top:-25%;
 					width: 20vh;
 					transition: opacity 275ms,transform 275ms;
-					color:#d4d1d1e7;
+					color: $background;
 					opacity:0;
 					transform: scale(0);
 				}
@@ -124,7 +124,6 @@
 			top:5%;
 			display:grid;
 			grid-template-columns: auto auto;
-			// margin-bottom: .5em;
 			margin: 0;
 			
 			.card{

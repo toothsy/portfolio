@@ -975,7 +975,7 @@ label, ::placeholder {
   transition: opacity 275ms,-webkit-transform 275ms;
   transition: opacity 275ms,transform 275ms;
   transition: opacity 275ms,transform 275ms,-webkit-transform 275ms;
-  color: #d4d1d1e7;
+  color: #282736;
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);

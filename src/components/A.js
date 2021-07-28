@@ -8,7 +8,7 @@ const Article=()=>{
     
     //keep the z-index of the articles above 2
     return (
-        <div id="article" className="container light">
+        <div id="article" className="container dark">
             <div className="Left">            
                 <div className="mt" >
                 <img src={tree} alt="tree" className="tree"  />
@@ -16,10 +16,10 @@ const Article=()=>{
                 </div>
                 <img src={DB} alt="DB" className="DB" />
             </div>
-            <div className="separator"></div>
+            <div className="separator  inv-sep"></div>
             <div className="Right">
                 <div className="Right-content">
-                    <h1 className="title">Articles</h1>
+                    <h1 className="titleDark">Articles</h1>
                     <div className="articleContent">
                         <div className="Bg">
                             <img src={uC} alt="underConstrunction" className="uC" />

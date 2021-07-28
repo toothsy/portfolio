@@ -25,7 +25,7 @@ const AboutMe=()=>{
                  <img src={lady} alt="lady" className="lady"/>
                  <img src={road} alt="road" className="road"/>
              </div>
-             <div className="separator inv-sep"></div>
+             <div className="separator  inv-sep"></div>
              <div className="Right">
              <div className="Right-content">
                  <h1 className="titleDark smol">About Me</h1>

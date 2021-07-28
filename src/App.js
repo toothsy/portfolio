@@ -12,8 +12,8 @@ export default function App() {
     < >
             <Menu/>
             <Home/>
-            <Art/>
             <Pro/>
+            <Art/>
             <CM/>
             <AM/>
             <Footer/>

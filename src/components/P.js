@@ -40,25 +40,25 @@ let secondRow = [{
 
 ]
     return (
-        <div id="project" className="container dark">
+        <div id="project" className="container light">
             <div className="Left">
                 <img src={mAC}  alt="proSVG1" className="mAC"/>
                 <img src={backG} alt="proSVG2"  className="backG"/>
             </div>      
-            <div className="separator inv-sep"></div>
+            <div className="separator"></div>
             <div className="Right">
                 <div className="Right-content">
-                    <h1 className="titleDark">Projects</h1>
+                    <h1 className="title">Projects</h1>
                         <div className="card-box">
-                        <div className="card-row">
-                            {firstRow.map((cardInfo,index)=><Card sf={cardInfo.sf} 
-                                                                                                lf={cardInfo.lf} 
-                                                                                                r={cardInfo.right} 
-                                                                                                id={cardInfo.id} 
-                                                                                                link={cardInfo.link} 
-                                                                                                key={index}
-                                                                                                gold={cardInfo.gold} />)}
-                        </div>
+                            <div className="card-row">
+                                {firstRow.map((cardInfo,index)=><Card sf={cardInfo.sf} 
+                                                                                                    lf={cardInfo.lf} 
+                                                                                                    r={cardInfo.right} 
+                                                                                                    id={cardInfo.id} 
+                                                                                                    link={cardInfo.link} 
+                                                                                                    key={index}
+                                                                                                    gold={cardInfo.gold} />)}
+                            </div>
                         <div className="card-row">
                             {secondRow.map((cardInfo,index)=><Card sf={cardInfo.sf} 
                                                                                                 lf={cardInfo.lf} 
