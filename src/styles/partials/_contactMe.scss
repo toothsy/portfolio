@@ -8,9 +8,6 @@
 	top:15%;
 }
 .wrapper{
-	position: relative;
-	top: 10%;
-	left: 0%;
 	height:50%;
 	width: 50%;
 	max-width: 550px;
@@ -105,7 +102,7 @@ label,::placeholder{
 	justify-content: center;
 	align-content: space-around;
 	flex-flow:row;
-	top:-10%;
+	top:-4%;
 
 }
  .verify{
@@ -124,9 +121,7 @@ label,::placeholder{
 	 .wrapper{
 		 width:65%;
 		 height:50%;
-		 position:relative;
-		 top:15%;
-		 left:0%;
+		 margin-top: .6em;
 	 }
    .contact-form{
 	flex-direction: column;
@@ -142,6 +137,7 @@ label,::placeholder{
  @media all and (min-width: 1030px)   and (max-width: 1368px) {
 	.wrapper{
 		height: 52%;
+		margin-top: .2em;
 	}
 	.treeAndMan{
 		position: relative;

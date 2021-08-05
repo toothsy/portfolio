@@ -15,7 +15,6 @@
 
 .card-box{
 	position:relative;
-     top: 15%;
      z-index: 5;
 	.card-row{
 		display:grid;	
@@ -121,7 +120,6 @@
 		height: 150vh;
 	 }
      .card-box{
-		left:5%;
 		margin-bottom: 0;
 		.card-row{
 			position: relative;

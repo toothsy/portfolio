@@ -19,7 +19,6 @@ export default function Menu() {
                         <ul>
                             <li><a href="#home">HOME</a></li>
                             <li><a href="#project">PROJECTS</a></li>
-                            <li><a href="#article">ARTICLES</a></li>
                             <li><a href="#contact">CONTACT</a></li>
                             <li><a href="#about">ABOUT</a></li>
 

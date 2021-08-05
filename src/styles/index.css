@@ -194,11 +194,6 @@ a {
   top: -5%;
 }
 
-.Right .Right-content h1 {
-  position: absolute;
-  top: 5%;
-}
-
 .title {
   color: #1a1919;
   font-size: 6em;
@@ -661,12 +656,9 @@ a {
 }
 
 .am {
-  position: absolute;
   font-size: 1.5rem;
   font-weight: 200;
   color: #FF6584;
-  top: 40%;
-  left: 10%;
 }
 
 .gridOne {
@@ -675,30 +667,40 @@ a {
   -ms-grid-columns: auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto;
   position: relative;
-  top: 25%;
 }
 
 .gridOne img {
   margin: .9em 1.2em;
-  height: 64px;
-  width: 64px;
+  height: 56px;
+  width: 56px;
+}
+
+.wrapperAM {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background: #3F3D56;
+  height: 75%;
+  padding: 2%;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  font-size: 1.6em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 900px) {
   .smol {
     font-size: 4.75em;
   }
-  .am {
-    font-size: 1.3rem;
-    position: relative;
-    top: 20%;
-    left: 5%;
-  }
   .gridOne {
-    width: 85%;
-    top: 20%;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
   }
   .gridOne img {
     margin: .3em .9em;
@@ -706,15 +708,22 @@ a {
   #about {
     height: 120vh;
   }
+  .wrapperAM {
+    height: 65%;
+    width: 94%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media all and (min-width: 1030px) and (max-width: 1368px) {
   .road {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-  }
-  .gridOne {
-    top: 33.5%;
   }
 }
 
@@ -730,9 +739,6 @@ a {
 }
 
 .wrapper {
-  position: relative;
-  top: 10%;
-  left: 0%;
   height: 50%;
   width: 50%;
   max-width: 550px;
@@ -897,7 +903,7 @@ label, ::placeholder {
       align-content: space-around;
   -ms-flex-flow: row;
       flex-flow: row;
-  top: -10%;
+  top: -4%;
 }
 
 .verify {
@@ -916,9 +922,7 @@ label, ::placeholder {
   .wrapper {
     width: 65%;
     height: 50%;
-    position: relative;
-    top: 15%;
-    left: 0%;
+    margin-top: .6em;
   }
   .contact-form {
     -webkit-box-orient: vertical;
@@ -937,6 +941,7 @@ label, ::placeholder {
 @media all and (min-width: 1030px) and (max-width: 1368px) {
   .wrapper {
     height: 52%;
+    margin-top: .2em;
   }
   .treeAndMan {
     position: relative;
@@ -964,7 +969,6 @@ label, ::placeholder {
 
 .card-box {
   position: relative;
-  top: 15%;
   z-index: 5;
 }
 
@@ -1105,7 +1109,6 @@ label, ::placeholder {
     height: 150vh;
   }
   .card-box {
-    left: 5%;
     margin-bottom: 0;
   }
   .card-box .card-row {
