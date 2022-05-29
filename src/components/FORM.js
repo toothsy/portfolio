@@ -35,7 +35,8 @@ export default function FORM() {
 					}
 				)
 			response.status === 200 ?
-			swal("Nice, the mail was sent","I will contact you ASAP!!","success")
+			
+			swal("Nice, the mail was sent","I will contact you ASAP!! \n Have a great day ahead of you 😁😁","success")
 			:
 			console.log(response);
 			 
