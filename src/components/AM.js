@@ -11,13 +11,14 @@ import java from '../svg/java.svg'
 import js from '../svg/js.svg'
 import mysql from '../svg/mysql.svg'
 import nodeJS from '../svg/nodeJS.svg'
-import opencv from '../svg/opencv.svg'
 import reactJs from '../svg/react-js.svg'
 import tcl from '../svg/tcl.svg'
-import tfjs from '../svg/tfjs.png'
 import ts from '../svg/ts.svg'
 import python from '../svg/python.svg'
 import mongodb from '../svg/mongodb.svg'
+import dotNet from '../svg/.Net.svg'
+import blazor from '../svg/blazor.svg'
+import cSharp from '../svg/cSharp.svg'
 
 const AboutMe=()=>{
     return (
@@ -33,7 +34,8 @@ const AboutMe=()=>{
                  <div className="wrapperAM">
                         <p className="am">
                             I'm an undergraduate student.<br/>
-                            The following languages ,library and  frameworks are the ones <br/> I'm familiar with
+                            The following languages, library
+                            and  frameworks are the ones <br/> I'm familiar with
                         </p>
                     <div className="gridOne">
                         <img height="64" width="64" src={c} alt="c"/>
@@ -45,13 +47,14 @@ const AboutMe=()=>{
                         <img height="64" width="64" src={js} alt="js"/>
                         <img height="64" width="64" src={mysql} alt="mysql"/>
                         <img height="64" width="64" src={nodeJS} alt="nodeJS"/>
-                        <img height="64" width="64" src={opencv} alt="opencv"/>
                         <img height="64" width="64" src={python} alt="python"/>
                         <img height="64" width="64" src={reactJs} alt="reactJs"/>
                         <img height="64" width="64" src={tcl} alt="tcl"/>
-                        <img height="64" width="77" src={tfjs} alt="tf"/>
                         <img height="64" width="64" src={ts} alt="ts"/>
                         <img height="64" width="64" src={mongodb} alt="mongo"/>
+                        <img height="64" width="64" src={cSharp} alt="cSharp"/>
+                        <img height="64" width="64" src={dotNet} alt="dotNet"/>
+                        <img height="64" width="64" src={blazor} alt="blazor"/>
                     </div>
                  </div>
             </div>

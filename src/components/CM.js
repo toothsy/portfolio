@@ -21,7 +21,7 @@ const ContactMe=()=>{
 
                 <div className="link">
                     <a href="https://github.com/toothsy" ><img src={github} alt="github" className="c-logo-1"/></a>
-                    <a href="https://www.linkedin.com/in/atharva-c-j/"><img src={linkedin} style={{marginLeft:".6em"}}  alt="linkedin" className="c-logo-2"/></a>
+                    <a href="https://www.linkedin.com/in/c-j-atharva/"><img src={linkedin} style={{marginLeft:".6em"}}  alt="linkedin" className="c-logo-2"/></a>
                 </div>
 
                 <div className="wrapper">

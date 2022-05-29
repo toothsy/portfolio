@@ -24,16 +24,27 @@ export default function FORM() {
 		return error;
 	 }
 	 const submitHandler=async val=>{
-		let response = await window.emailjs.send(
-			"doot-doot","template_cj0",
-			{
-				from_name: val.name,
-				email:val.email,
-				content:val.message
-				}
-			)
+		let response;
+		 try {
+			response = await window.emailjs.send(
+				"doot-doot","template_cj0",
+				{
+					from_name: val.name,
+					email:val.email,
+					content:val.message
+					}
+				)
+			response.status === 200 ?
+			swal("Nice, the mail was sent","I will contact you ASAP!!","success")
+			:
+			console.log(response);
+			 
+		 } catch (error) {
+			swal("Uh-oh,the mail was not sent","Perhaps you can contact me on linkedIn?","failure")
+			console.log(error);
+		 }
 		// console.log("resposonse is ",response.status)
-		response.status === 200 ? swal("Nice, the mail was sent","I will contact you ASAP!!","success"):console.log(response)
+		
 	 }
 	 const formik = useFormik({
 		initialValues:{

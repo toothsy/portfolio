@@ -5,13 +5,22 @@ import Card from './C'
 const projects=()=>{
     let firstRow=[
         {
-            "sf":"S A S",
-            "lf":"Smart Attendance System",
-            "right":"this is a Full Stack Project which also includes face detection service" ,
-            "link":"https://github.com/slirq/Smart-attendance-database-system",
+            "sf":"H M",
+            "lf":"Hyper Market",
+            "right":"A dotNet ecosystem based full-stack project built with blazor-wasm and .Net server" ,
+            "link":"https://github.com/toothsy/HyperMarket",
             "gold":true,
             "id":0
-            }
+        },
+        {
+            "sf":"S A S",
+            "lf":"Smart Attendance System",
+            "right":"this is a full-stack project which also includes face detection service" ,
+            "link":"https://github.com/slirq/Smart-attendance-database-system",
+            "gold":true,
+            "id":1
+        }
+        
     ]
 let secondRow = [{
         "sf":"CG",
