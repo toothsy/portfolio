@@ -1,65 +1,103 @@
-.lady{
+.lady {
 	position: absolute;
-	top:31%;
-	left:40%;
+	top: 31%;
+	left: 40%;
 	z-index: 2;
 }
-.road{
+
+.road {
 	position: absolute;
-	top:25%;
+	top: 25%;
 	z-index: 1;
 }
-.am{
-    	font-size:1.5rem;
-    	font-weight: 200;
-    	color:#FF6584;
+
+.am {
+	font-size: 1.5rem;
+	font-weight: 200;
+	color: $darkFontColor
 }
-.gridOne{
-	display:grid;
-	grid-template-columns: auto auto auto auto auto ;
+
+#about {
+	height: 120vh;
+	;
+}
+
+.gridOne {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
 	position: relative;
-	img{
-		margin:.9em 1.2em;
-		height:56px;
-		width:56px;
+
+	div img {
+		margin: .9em 1.2em;
+		height: 56px;
+		width: 56px;
 	}
 }
-.wrapperAM{
+
+.imageTag {
+	@include centerShit();
+	flex-direction: column;
+	color: $darkFontColor;
+
+}
+
+.link {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: space-around;
+	flex-flow: row;
+	margin-top: 3%;
+
+}
+
+.wrapperAM {
 	position: relative;
 	display: flex;
 	width: 90%;
-	background: #3F3D56;
-	height: 75%;
 	padding: 2%;
 	border-radius: .5em;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
 	font-size: 1.6em;
 	flex-direction: column;
+	margin-bottom: 10%;
 }
+
 @media (max-width: 900px) {
-	.smol{
+	.smol {
 		font-size: 4.75em;
 	}
-	.gridOne{
-		grid-template-columns: auto auto auto auto;
-		img{
-			margin:.3em .9em;
-		}
+
+	.gridOne {
+		grid-template-columns: auto auto auto;
+		min-height: 50%;
+
 	}
-	#about{
-		height:120vh;
+
+	#about {
+		height: 140vh;
 	}
-	.wrapperAM{
-		height:65%;
-		width: 94%;
+
+	.wrapperAM {
+		min-height: 15%;
+		width: 70%;
 		justify-content: center;
 		align-items: center;
+		padding: 20px;
+		margin-bottom: 10%;
+		;
+	}
+
+	.imageTag {
+		font-size: medium;
 	}
 
 }
 
-@media all and (min-width: 1030px)   and (max-width: 1368px) {
-	.road{
+@media all and (min-width: 1030px) and (max-width: 1368px) {
+	.road {
 		transform: scale(.8);
 	}
 }

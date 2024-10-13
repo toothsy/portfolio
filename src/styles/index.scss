@@ -1,11 +1,17 @@
 @import "./partials/functions";
-$background:rgb(40, 39, 54);
-$fullH:100vh;
-$fullW:100vw;
-$scaleFactor:0.4;
+$background: #5650A4;
+$fullH: 100vh;
+$fullW: 100vw;
+$scaleFactor: 0.4;
+$fontColor: #ff839c;
 
-#instContainer{
-    .hidden{display:none;}
+$darkFontColor: #e0002d;
+
+#instContainer {
+    .hidden {
+        display: none;
+    }
+
     width:20vw;
     height:20vh;
     position:fixed;
@@ -15,157 +21,195 @@ $scaleFactor:0.4;
     border:.2em solid #ff6584a4;
     z-index: 7;
     @include centerShit();
-    
-    #butInstall{
-        height:5vh;
-        width:6vw;
+
+    #butInstall {
+        height: 5vh;
+        width: 6vw;
         position: relative;
-        top:25%;
-        left:20%;
-        font-family: "Imprima",sans-serif;
+        top: 25%;
+        left: 20%;
+        font-family: "Imprima", sans-serif;
     }
 }
 
-html,body{
+html,
+body {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family: "Imprima",sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Imprima", sans-serif;
     background-color: $background;
     scroll-behavior: smooth;
     overflow-x: hidden;
     user-select: none;
 }
-h1,h2,h3{
-    margin: .5em  0 ;
-}
-.container{
-        height: 95vh;
-        width: 100vw;
-        position: relative;
-        top: 0;
-        left: 0;
-        display:flex;
-        flex-direction: row;
-        overflow: hidden;
-    }
 
-.light{
-    background-color:#D4D1D1;
+h1,
+h2,
+h3 {
+    margin: .5em 0;
 }
-.dark{
-    background-color :rgb(40, 39, 54);
+
+.container {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
-.footer{
-    background-color:black;
-    height:30vh;
-    width:100%;
+
+.light {
+    background-color: #D4D1D1;
+}
+
+.dark {
+    background-color: #5650A4;
+}
+
+.footer {
+    background-color: black;
+    height: 30vh;
+    width: 100%;
     color: #D4D1D1;
     @include centerShit();
     flex-direction: column;
     text-decoration: none;
-    
+
 }
-.logo-wrapper{
+
+.logo-wrapper {
     transform: scale($scaleFactor);
     @include centerShit();
 }
-.attributing{
+
+.attributing {
     @include centerShit();
     position: relative;
-    top:30%;
-    
+    top: 30%;
+
 }
-a{
+
+a {
     text-decoration: none;
-    color:rgb(67, 130, 246);
+    color: rgb(67, 130, 246);
 }
-.projectS,.articleS,.contactS,.aboutS{
-    width:40%;
-    height:100%;
-    display:flex;
+
+.projectS,
+.articleS,
+.contactS,
+.aboutS {
+    width: 40%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
 }
-.homeS{
-    width:100%;
+
+.homeS {
+    width: 100%;
     border: 10px solid #000;
 }
 
-.Left{
-    display:flex;
-    justify-content:center;
+.Left {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
-    height:100%;
-    width:48.5%;
-    position:relative;
+    height: 100%;
+    width: 48.5%;
+    position: relative;
 }
 
-.Right{
-    display:flex;
+.Right {
+    display: flex;
     flex-direction: row;
-    height:100%;
-    width:48.5%;
-    position:relative;
-    .Right-content{
-        display:flex;
-        height:100%;
-        width:100%;
+    height: 100%;
+    width: 48.5%;
+    position: relative;
+
+    .Right-content {
+        display: flex;
+        height: 100%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: relative;
-        top:-5%;
+        top: -5%;
     }
 }
-.title{
-	color:#1a1919;
-    font-size:6em;
+
+.title {
+    color: #1a1919;
+    font-size: 6em;
     font-weight: 400;
 }
-.titleDark{
-    color:#d4d1d1e7;
-    font-size:6em;
+
+.titleDark {
+    color: #d4d1d1e7;
+    font-size: 6em;
     font-weight: 400;
 }
-.separator{
-    height:100%;
-    width:3%;
-    background: linear-gradient(180deg, rgb(40, 39, 54) 0%, rgba(59, 58, 65, 0.03) 100%);
+
+.separator {
+    height: 100%;
+    width: 3%;
+    @include centerShit();
+    background: linear-gradient(180deg, #5650A4 0%, rgba(59, 58, 65, 0.03) 100%);
 }
-.inv-sep{
-    background: linear-gradient(180deg,  #CECBCB ,rgb(40, 39, 54) 100%);
+
+.inv-sep {
+    @include centerShit();
+    background: linear-gradient(180deg, #CECBCB, #5650A4 100%);
 }
+
 @media (max-width: 900px) {
 
-    .title{
-        color:#ff6584;
+    .title {
+        color: #ff6584;
     }
-    .Left{
-        width:0;
-        visibility:hidden;
+
+    .Left {
+        width: 0;
+        visibility: hidden;
     }
-    .Right{
-        width:100%;
-        h1{
-            top:10%;
+
+    .Right {
+        width: 100%;
+
+        h1 {
+            top: 10%;
         }
     }
-	.titleDark{
-		color:#ff6584;
-	}
-    .attributing{
+
+    .titleDark {
+        color: #ff6584;
+    }
+
+    .attributing {
         font-size: .9em;
-        top:35%;
+        top: 35%;
+
+    }
+
+    .separator {
+        background: unset;
+    }
+
+    .inv-sep {
+        background: unset;
+    }
+}
+
+@media all and (min-width: 1030px) and (max-width: 1368px) {
+    .attributing {
+        font-size: .9em;
+        top: 45%;
 
     }
 }
-@media all and (min-width: 1030px)   and (max-width: 1368px) {
-    .attributing{
-        font-size: .9em;
-        top:45%;
 
-    }
-}
 @import "./partials/articles";
 @import "./partials/home";
 @import "./partials/aboutMe";
